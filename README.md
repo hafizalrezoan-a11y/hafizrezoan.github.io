@@ -1,8 +1,8 @@
-# hafizrezoan.me
+# hafizrezoan.online
 
 Personal portfolio site for Hafiz Al Rezoan — GIS Analyst & Geospatial Researcher.
 
-Hosted via GitHub Pages, served at https://hafizrezoan.me.
+Hosted via GitHub Pages, served at https://hafizrezoan.online.
 
 ## Local preview
 
