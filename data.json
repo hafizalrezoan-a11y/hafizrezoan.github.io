@@ -8,7 +8,7 @@
     "initials": "HR",
     "shortTitle": "GIS Analyst",
     "location": "Dhaka, Bangladesh",
-    "avatarUrl": ""
+    "avatarUrl": "images/avatar-1779527857773.jpg"
   },
   "hero": {
     "eyebrow": "Geospatial Researcher",
@@ -18,17 +18,37 @@
     "ctaSecondaryLabel": "View publications",
     "cardHeading": "At a glance",
     "cardRows": [
-      { "label": "Current role", "value": "GIS Analyst" },
-      { "label": "Organisation", "value": "Eutech Systems Ltd." },
-      { "label": "Education", "value": "MS, Jahangirnagar Univ." },
-      { "label": "Location", "value": "Dhaka, Bangladesh" }
+      {
+        "label": "Current role",
+        "value": "GIS Analyst"
+      },
+      {
+        "label": "Organisation",
+        "value": "Eutech Systems Ltd."
+      },
+      {
+        "label": "Education",
+        "value": "MS, Jahangirnagar Univ."
+      },
+      {
+        "label": "Location",
+        "value": "Dhaka, Bangladesh"
+      }
     ]
   },
   "about": {
     "title": "A practitioner of <em>spatial inquiry</em>, working across fieldwork, imagery, and code.",
     "stats": [
-      { "num": "7", "unit": "+", "label": "Years in GIS research & analysis" },
-      { "num": "3.94", "unit": "/4", "label": "MS GPA, Jahangirnagar University" }
+      {
+        "num": "7",
+        "unit": "+",
+        "label": "Years in GIS research & analysis"
+      },
+      {
+        "num": "3.94",
+        "unit": "/4",
+        "label": "MS GPA, Jahangirnagar University"
+      }
     ],
     "paragraphs": [
       "I specialise in <strong>multidisciplinary geospatial research</strong>, technical reporting, and the kind of comprehensive documentation that helps complex environmental projects actually finish. Over the last seven years I've coordinated activities across agencies and stakeholders — from local field surveys in coastal Bangladesh to journal-level scientific writing.",
@@ -80,37 +100,68 @@
       "id": "s_1",
       "heading": "Geospatial Analysis",
       "sub": "GIS / Remote Sensing",
-      "chips": ["ArcGIS", "ArcGIS Pro", "ERDAS Imagine", "SPI", "SEPI", "DSAS"]
+      "chips": [
+        "ArcGIS",
+        "ArcGIS Pro",
+        "ERDAS Imagine",
+        "SPI",
+        "SEPI",
+        "DSAS"
+      ]
     },
     {
       "id": "s_2",
       "heading": "Drone & Photogrammetry",
       "sub": "UAV Surveying",
-      "chips": ["Survey-Grade UAV", "Pix4D", "Agisoft Metashape", "ArcGIS Drone2Map", "Orthomosaic"]
+      "chips": [
+        "Survey-Grade UAV",
+        "Pix4D",
+        "Agisoft Metashape",
+        "ArcGIS Drone2Map",
+        "Orthomosaic"
+      ]
     },
     {
       "id": "s_3",
       "heading": "Statistics & Data",
       "sub": "Quantitative Analysis",
-      "chips": ["SPSS", "OriginLab", "Excel", "KoboToolbox"]
+      "chips": [
+        "SPSS",
+        "OriginLab",
+        "Excel",
+        "KoboToolbox"
+      ]
     },
     {
       "id": "s_4",
       "heading": "Programming",
       "sub": "Scripting & Automation",
-      "chips": ["Python", "R", "ArcGIS API for Python", "ArcGIS Notebooks", "Deep Learning · ArcGIS Pro"]
+      "chips": [
+        "Python",
+        "R",
+        "ArcGIS API for Python",
+        "ArcGIS Notebooks",
+        "Deep Learning · ArcGIS Pro"
+      ]
     },
     {
       "id": "s_5",
       "heading": "Documentation",
       "sub": "Writing & Reporting",
-      "chips": ["LaTeX", "MS Office", "Scientific Writing"]
+      "chips": [
+        "LaTeX",
+        "MS Office",
+        "Scientific Writing"
+      ]
     },
     {
       "id": "s_6",
       "heading": "Referencing",
       "sub": "Citation Management",
-      "chips": ["Zotero", "Mendeley"]
+      "chips": [
+        "Zotero",
+        "Mendeley"
+      ]
     }
   ],
   "publications": [
@@ -182,30 +233,198 @@
     }
   ],
   "courses": [
-    { "id": "c_01", "name": "Data QC with ArcGIS: Automating Validation", "org": "ESRI Training", "date": "May 2024", "duration": "2h 45m", "category": "ESRI Training" },
-    { "id": "c_02", "name": "Data QC with ArcGIS: Visual Review", "org": "ESRI Training", "date": "May 2024", "duration": "2h 15m", "category": "ESRI Training" },
-    { "id": "c_03", "name": "Downscaling a Prediction Model Using ArcGIS Notebooks and ArcGIS Pro", "org": "ESRI ArcGIS Lab", "date": "May 2024", "duration": "2h 15m", "category": "ESRI Training" },
-    { "id": "c_04", "name": "Creating Prediction Surfaces in ArcGIS", "org": "ESRI Training", "date": "May 2024", "duration": "5h 15m", "category": "ESRI Training" },
-    { "id": "c_05", "name": "ArcGIS Drone2Map Basics", "org": "ESRI Training", "date": "May 2024", "duration": "2h 10m", "category": "ESRI Training" },
-    { "id": "c_06", "name": "Creating a Knowledge Graph from Structured Data Using ArcGIS Knowledge", "org": "ESRI ArcGIS Lab", "date": "May 2024", "duration": "2h 40m", "category": "ESRI Training" },
-    { "id": "c_07", "name": "ArcGIS Notebooks Basics", "org": "ESRI Training", "date": "Mar 2024", "duration": "1h", "category": "ESRI Training" },
-    { "id": "c_08", "name": "Creating a Web Map in ArcGIS Pro", "org": "ESRI Training", "date": "Mar 2024", "duration": "3h 5m", "category": "ESRI Training" },
-    { "id": "c_09", "name": "Getting Started with Geoprocessing", "org": "ESRI Training", "date": "Mar 2024", "duration": "1h 30m", "category": "ESRI Training" },
-    { "id": "c_10", "name": "Geostatistical Interpolation: Introduction", "org": "ESRI Training", "date": "Mar 2024", "duration": "2h", "category": "ESRI Training" },
-    { "id": "c_11", "name": "Getting Started with Spatial Analysis", "org": "ESRI Training", "date": "Mar 2024", "duration": "1h 10m", "category": "ESRI Training" },
-    { "id": "c_12", "name": "Getting Started with the Geodatabase", "org": "ESRI Training", "date": "Mar 2024", "duration": "3h 30m", "category": "ESRI Training" },
-    { "id": "c_13", "name": "Creating Python Scripts for Raster Analysis", "org": "ESRI Training", "date": "Feb 2024", "duration": "1h", "category": "ESRI Training" },
-    { "id": "c_14", "name": "Change Detection Using Imagery", "org": "ESRI Training", "date": "Feb 2024", "duration": "2h 30m", "category": "ESRI Training" },
-    { "id": "c_15", "name": "Administering Content Using ArcGIS API for Python", "org": "ESRI Training", "date": "Feb 2024", "duration": "1h 30m", "category": "ESRI Training" },
-    { "id": "c_16", "name": "Accessing Data in a Portal Using ArcGIS API for Python", "org": "ESRI Training", "date": "Feb 2024", "duration": "1h", "category": "ESRI Training" },
-    { "id": "c_17", "name": "Performing Analysis Using ArcGIS API for Python", "org": "ESRI Training", "date": "Feb 2024", "duration": "", "category": "ESRI Training" },
-    { "id": "c_18", "name": "Visualizing Data Using ArcGIS API for Python", "org": "ESRI Training", "date": "Feb 2024", "duration": "", "category": "ESRI Training" },
-    { "id": "c_19", "name": "Classifying Objects Using Deep Learning in ArcGIS Pro", "org": "ESRI ArcGIS Lab", "date": "Feb 2024", "duration": "1h 20m", "category": "ESRI Training" },
-    { "id": "c_20", "name": "Deep Learning Using ArcGIS Pro", "org": "ESRI Training", "date": "Feb 2024", "duration": "2h 15m", "category": "ESRI Training" },
-    { "id": "c_21", "name": "GIS for Climate Action", "org": "ESRI MOOC", "date": "Dec 2023", "duration": "6 weeks", "category": "ESRI MOOC" },
-    { "id": "c_22", "name": "Imagery in Action", "org": "ESRI MOOC", "date": "Oct 2023", "duration": "", "category": "ESRI MOOC" },
-    { "id": "c_23", "name": "Spatial Data Science: The New Frontier in Analytics", "org": "ESRI MOOC", "date": "Oct 2023", "duration": "", "category": "ESRI MOOC" },
-    { "id": "c_24", "name": "Research Course: Basic to Advance", "org": "Research Help Bangladesh", "date": "Jul 2023", "duration": "", "category": "Other" }
+    {
+      "id": "c_01",
+      "name": "Data QC with ArcGIS: Automating Validation",
+      "org": "ESRI Training",
+      "date": "May 2024",
+      "duration": "2h 45m",
+      "category": "ESRI Training"
+    },
+    {
+      "id": "c_02",
+      "name": "Data QC with ArcGIS: Visual Review",
+      "org": "ESRI Training",
+      "date": "May 2024",
+      "duration": "2h 15m",
+      "category": "ESRI Training"
+    },
+    {
+      "id": "c_03",
+      "name": "Downscaling a Prediction Model Using ArcGIS Notebooks and ArcGIS Pro",
+      "org": "ESRI ArcGIS Lab",
+      "date": "May 2024",
+      "duration": "2h 15m",
+      "category": "ESRI Training"
+    },
+    {
+      "id": "c_04",
+      "name": "Creating Prediction Surfaces in ArcGIS",
+      "org": "ESRI Training",
+      "date": "May 2024",
+      "duration": "5h 15m",
+      "category": "ESRI Training"
+    },
+    {
+      "id": "c_05",
+      "name": "ArcGIS Drone2Map Basics",
+      "org": "ESRI Training",
+      "date": "May 2024",
+      "duration": "2h 10m",
+      "category": "ESRI Training"
+    },
+    {
+      "id": "c_06",
+      "name": "Creating a Knowledge Graph from Structured Data Using ArcGIS Knowledge",
+      "org": "ESRI ArcGIS Lab",
+      "date": "May 2024",
+      "duration": "2h 40m",
+      "category": "ESRI Training"
+    },
+    {
+      "id": "c_07",
+      "name": "ArcGIS Notebooks Basics",
+      "org": "ESRI Training",
+      "date": "Mar 2024",
+      "duration": "1h",
+      "category": "ESRI Training"
+    },
+    {
+      "id": "c_08",
+      "name": "Creating a Web Map in ArcGIS Pro",
+      "org": "ESRI Training",
+      "date": "Mar 2024",
+      "duration": "3h 5m",
+      "category": "ESRI Training"
+    },
+    {
+      "id": "c_09",
+      "name": "Getting Started with Geoprocessing",
+      "org": "ESRI Training",
+      "date": "Mar 2024",
+      "duration": "1h 30m",
+      "category": "ESRI Training"
+    },
+    {
+      "id": "c_10",
+      "name": "Geostatistical Interpolation: Introduction",
+      "org": "ESRI Training",
+      "date": "Mar 2024",
+      "duration": "2h",
+      "category": "ESRI Training"
+    },
+    {
+      "id": "c_11",
+      "name": "Getting Started with Spatial Analysis",
+      "org": "ESRI Training",
+      "date": "Mar 2024",
+      "duration": "1h 10m",
+      "category": "ESRI Training"
+    },
+    {
+      "id": "c_12",
+      "name": "Getting Started with the Geodatabase",
+      "org": "ESRI Training",
+      "date": "Mar 2024",
+      "duration": "3h 30m",
+      "category": "ESRI Training"
+    },
+    {
+      "id": "c_13",
+      "name": "Creating Python Scripts for Raster Analysis",
+      "org": "ESRI Training",
+      "date": "Feb 2024",
+      "duration": "1h",
+      "category": "ESRI Training"
+    },
+    {
+      "id": "c_14",
+      "name": "Change Detection Using Imagery",
+      "org": "ESRI Training",
+      "date": "Feb 2024",
+      "duration": "2h 30m",
+      "category": "ESRI Training"
+    },
+    {
+      "id": "c_15",
+      "name": "Administering Content Using ArcGIS API for Python",
+      "org": "ESRI Training",
+      "date": "Feb 2024",
+      "duration": "1h 30m",
+      "category": "ESRI Training"
+    },
+    {
+      "id": "c_16",
+      "name": "Accessing Data in a Portal Using ArcGIS API for Python",
+      "org": "ESRI Training",
+      "date": "Feb 2024",
+      "duration": "1h",
+      "category": "ESRI Training"
+    },
+    {
+      "id": "c_17",
+      "name": "Performing Analysis Using ArcGIS API for Python",
+      "org": "ESRI Training",
+      "date": "Feb 2024",
+      "duration": "",
+      "category": "ESRI Training"
+    },
+    {
+      "id": "c_18",
+      "name": "Visualizing Data Using ArcGIS API for Python",
+      "org": "ESRI Training",
+      "date": "Feb 2024",
+      "duration": "",
+      "category": "ESRI Training"
+    },
+    {
+      "id": "c_19",
+      "name": "Classifying Objects Using Deep Learning in ArcGIS Pro",
+      "org": "ESRI ArcGIS Lab",
+      "date": "Feb 2024",
+      "duration": "1h 20m",
+      "category": "ESRI Training"
+    },
+    {
+      "id": "c_20",
+      "name": "Deep Learning Using ArcGIS Pro",
+      "org": "ESRI Training",
+      "date": "Feb 2024",
+      "duration": "2h 15m",
+      "category": "ESRI Training"
+    },
+    {
+      "id": "c_21",
+      "name": "GIS for Climate Action",
+      "org": "ESRI MOOC",
+      "date": "Dec 2023",
+      "duration": "6 weeks",
+      "category": "ESRI MOOC"
+    },
+    {
+      "id": "c_22",
+      "name": "Imagery in Action",
+      "org": "ESRI MOOC",
+      "date": "Oct 2023",
+      "duration": "",
+      "category": "ESRI MOOC"
+    },
+    {
+      "id": "c_23",
+      "name": "Spatial Data Science: The New Frontier in Analytics",
+      "org": "ESRI MOOC",
+      "date": "Oct 2023",
+      "duration": "",
+      "category": "ESRI MOOC"
+    },
+    {
+      "id": "c_24",
+      "name": "Research Course: Basic to Advance",
+      "org": "Research Help Bangladesh",
+      "date": "Jul 2023",
+      "duration": "",
+      "category": "Other"
+    }
   ],
   "scholarNote": {
     "label": "Scholar Activities",
