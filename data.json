@@ -1,0 +1,226 @@
+{
+  "site": {
+    "title": "Hafiz Al Rezoan — GIS Analyst & Geospatial Researcher",
+    "logoName": "Hafiz Al Rezoan"
+  },
+  "profile": {
+    "name": "Hafiz Al Rezoan",
+    "initials": "HR",
+    "shortTitle": "GIS Analyst",
+    "location": "Dhaka, Bangladesh",
+    "avatarUrl": ""
+  },
+  "hero": {
+    "eyebrow": "Geospatial Researcher",
+    "headline": "Mapping coastal change, urban heat, and the data <em>in between</em>.",
+    "lead": "Nearly seven years of professional experience in spatial data analysis, remote sensing, UAV surveying, and peer-reviewed environmental research — based in Dhaka, Bangladesh.",
+    "ctaPrimaryLabel": "Get in touch",
+    "ctaSecondaryLabel": "View publications",
+    "cardHeading": "At a glance",
+    "cardRows": [
+      { "label": "Current role", "value": "GIS Analyst" },
+      { "label": "Organisation", "value": "Eutech Systems Ltd." },
+      { "label": "Education", "value": "MS, Jahangirnagar Univ." },
+      { "label": "Location", "value": "Dhaka, Bangladesh" }
+    ]
+  },
+  "about": {
+    "title": "A practitioner of <em>spatial inquiry</em>, working across fieldwork, imagery, and code.",
+    "stats": [
+      { "num": "7", "unit": "+", "label": "Years in GIS research & analysis" },
+      { "num": "3.94", "unit": "/4", "label": "MS GPA, Jahangirnagar University" }
+    ],
+    "paragraphs": [
+      "I specialise in <strong>multidisciplinary geospatial research</strong>, technical reporting, and the kind of comprehensive documentation that helps complex environmental projects actually finish. Over the last seven years I've coordinated activities across agencies and stakeholders — from local field surveys in coastal Bangladesh to journal-level scientific writing.",
+      "My core competencies sit across <strong>Geographic Information Systems, remote sensing, UAV surveying, drone data processing, and photogrammetric analysis</strong>. That toolkit increasingly includes Python, R, and deep-learning workflows inside ArcGIS Pro.",
+      "I'm most useful where geospatial technology meets research method — translating raw imagery, sensor data, and field samples into evidence that supports real decisions."
+    ]
+  },
+  "experience": [
+    {
+      "id": "e_1",
+      "date": "Sep 2024 — Present",
+      "role": "GIS Analyst",
+      "org": "Eutech Systems Limited",
+      "tasks": [
+        "GIS data analysis and geospatial workflows",
+        "Survey-grade drone piloting",
+        "Drone photo correction and photogrammetric analysis",
+        "Operating environmental sensor instruments",
+        "Coordinating company events and logistics"
+      ]
+    },
+    {
+      "id": "e_2",
+      "date": "Nov 2023 — Feb 2024",
+      "role": "Research Consultant",
+      "org": "CEGIS",
+      "tasks": [
+        "Map digitising for national-scale datasets",
+        "Geographic data input and database curation",
+        "Land-use / land-cover change detection",
+        "Drainage system updates and validation"
+      ]
+    },
+    {
+      "id": "e_3",
+      "date": "Jul 2019 — Jul 2023",
+      "role": "Research Assistant",
+      "org": "SUST Research Center",
+      "tasks": [
+        "Geospatial and geostatistical analysis",
+        "Field-based sample collection",
+        "Risk-zone assessment for environmental hazards",
+        "Scientific report writing and documentation"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "s_1",
+      "heading": "Geospatial Analysis",
+      "sub": "GIS / Remote Sensing",
+      "chips": ["ArcGIS", "ArcGIS Pro", "ERDAS Imagine", "SPI", "SEPI", "DSAS"]
+    },
+    {
+      "id": "s_2",
+      "heading": "Drone & Photogrammetry",
+      "sub": "UAV Surveying",
+      "chips": ["Survey-Grade UAV", "Pix4D", "Agisoft Metashape", "ArcGIS Drone2Map", "Orthomosaic"]
+    },
+    {
+      "id": "s_3",
+      "heading": "Statistics & Data",
+      "sub": "Quantitative Analysis",
+      "chips": ["SPSS", "OriginLab", "Excel", "KoboToolbox"]
+    },
+    {
+      "id": "s_4",
+      "heading": "Programming",
+      "sub": "Scripting & Automation",
+      "chips": ["Python", "R", "ArcGIS API for Python", "ArcGIS Notebooks", "Deep Learning · ArcGIS Pro"]
+    },
+    {
+      "id": "s_5",
+      "heading": "Documentation",
+      "sub": "Writing & Reporting",
+      "chips": ["LaTeX", "MS Office", "Scientific Writing"]
+    },
+    {
+      "id": "s_6",
+      "heading": "Referencing",
+      "sub": "Citation Management",
+      "chips": ["Zotero", "Mendeley"]
+    }
+  ],
+  "publications": [
+    {
+      "id": "p_1",
+      "year": 2025,
+      "title": "The impact of staple crop price instability and fragmented policy on food security and sustainable development: A case study from Bangladesh",
+      "authorsHtml": "Ahmed, Z., Kadir, A., Alam, R., <strong>Hafiz-Al-Rezoan</strong>, &amp; Laskor, Md. A. H.",
+      "journal": "Discover Sustainability · 6(1), Article 1",
+      "doi": "10.1007/s43621-025-00878-7"
+    },
+    {
+      "id": "p_2",
+      "year": 2024,
+      "title": "Influence of green space on land surface temperature in the coastal cities in Bangladesh",
+      "authorsHtml": "Islam, T., Ahmed, Z., Kadir, A., Ambinakudige, S., Ahad, I., Hassan, R., <strong>Hafiz-Al-Rezoan</strong>, Hossain, S., &amp; Pohil, A.H.",
+      "journal": "Environment, Development and Sustainability",
+      "doi": "10.1007/s10668-024-05112-4"
+    },
+    {
+      "id": "p_3",
+      "year": 2022,
+      "title": "Perceived Human-Induced Causes of Landslide in Chattogram Metropolitan Area in Bangladesh",
+      "authorsHtml": "Ahmed, Z., Hussain, A.H.M.B., Ambinakudige, S., Ahmed, M.N.Q., Alam, R., <strong>Rezoan, H.-A.</strong>, Das Dola, D., Rahman, M.M., Hassan, R., &amp; Mahmud, S.",
+      "journal": "Earth Systems and Environment · 6(2), 499–515",
+      "doi": "10.1007/s41748-022-00304-2"
+    },
+    {
+      "id": "p_4",
+      "year": 2021,
+      "title": "Spatio-temporal analysis of heavy metals in the sediment of lower Meghna river using contamination indices, multivariate statistics and GIS techniques",
+      "authorsHtml": "Ahmed, Z., Alam, R., Basak, R., <strong>Al Rezoan, H.</strong>, &amp; Acharjee, A.",
+      "journal": "Environmental Earth Sciences · 80(21), 715",
+      "doi": "10.1007/s12665-021-09997-6"
+    }
+  ],
+  "education": [
+    {
+      "id": "ed_1",
+      "degree": "MS in GIS for Environment and Development",
+      "institution": "Department of Geography, Jahangirnagar University",
+      "dates": "Feb 2022 — Dec 2024",
+      "grade": "CGPA 3.94 / 4.00"
+    },
+    {
+      "id": "ed_2",
+      "degree": "BSc in Geography and Environment",
+      "institution": "Shahjalal University of Science and Technology, Sylhet",
+      "dates": "Apr 2015 — Oct 2019",
+      "grade": "CGPA 3.05 / 4.00"
+    }
+  ],
+  "research": [
+    {
+      "id": "r_1",
+      "title": "Comparative Study on the Offshore Islands of Bangladesh",
+      "institution": "SUST, Sylhet · Kutubdia, Maheshkhali, Sonadia, Saint Martin's",
+      "description": "Identified geomorphological differences across four offshore islands, supporting comparative coastal-hazard analysis.",
+      "dates": "Mar — Jul 2018",
+      "role": "Student Researcher"
+    },
+    {
+      "id": "r_2",
+      "title": "Impacts of Disasters in the Coastal Region of Bangladesh — Kuakata, Patuakhali",
+      "institution": "SUST, Sylhet · SPSS 16, ArcGIS 10.3",
+      "description": "Analysed, documented, and managed milestones for a multi-stage coastal disaster impact study.",
+      "dates": "Jan 2015 — Sep 2016",
+      "role": "Student Researcher"
+    }
+  ],
+  "courses": [
+    { "id": "c_01", "name": "Data QC with ArcGIS: Automating Validation", "org": "ESRI Training", "date": "May 2024", "duration": "2h 45m", "category": "ESRI Training" },
+    { "id": "c_02", "name": "Data QC with ArcGIS: Visual Review", "org": "ESRI Training", "date": "May 2024", "duration": "2h 15m", "category": "ESRI Training" },
+    { "id": "c_03", "name": "Downscaling a Prediction Model Using ArcGIS Notebooks and ArcGIS Pro", "org": "ESRI ArcGIS Lab", "date": "May 2024", "duration": "2h 15m", "category": "ESRI Training" },
+    { "id": "c_04", "name": "Creating Prediction Surfaces in ArcGIS", "org": "ESRI Training", "date": "May 2024", "duration": "5h 15m", "category": "ESRI Training" },
+    { "id": "c_05", "name": "ArcGIS Drone2Map Basics", "org": "ESRI Training", "date": "May 2024", "duration": "2h 10m", "category": "ESRI Training" },
+    { "id": "c_06", "name": "Creating a Knowledge Graph from Structured Data Using ArcGIS Knowledge", "org": "ESRI ArcGIS Lab", "date": "May 2024", "duration": "2h 40m", "category": "ESRI Training" },
+    { "id": "c_07", "name": "ArcGIS Notebooks Basics", "org": "ESRI Training", "date": "Mar 2024", "duration": "1h", "category": "ESRI Training" },
+    { "id": "c_08", "name": "Creating a Web Map in ArcGIS Pro", "org": "ESRI Training", "date": "Mar 2024", "duration": "3h 5m", "category": "ESRI Training" },
+    { "id": "c_09", "name": "Getting Started with Geoprocessing", "org": "ESRI Training", "date": "Mar 2024", "duration": "1h 30m", "category": "ESRI Training" },
+    { "id": "c_10", "name": "Geostatistical Interpolation: Introduction", "org": "ESRI Training", "date": "Mar 2024", "duration": "2h", "category": "ESRI Training" },
+    { "id": "c_11", "name": "Getting Started with Spatial Analysis", "org": "ESRI Training", "date": "Mar 2024", "duration": "1h 10m", "category": "ESRI Training" },
+    { "id": "c_12", "name": "Getting Started with the Geodatabase", "org": "ESRI Training", "date": "Mar 2024", "duration": "3h 30m", "category": "ESRI Training" },
+    { "id": "c_13", "name": "Creating Python Scripts for Raster Analysis", "org": "ESRI Training", "date": "Feb 2024", "duration": "1h", "category": "ESRI Training" },
+    { "id": "c_14", "name": "Change Detection Using Imagery", "org": "ESRI Training", "date": "Feb 2024", "duration": "2h 30m", "category": "ESRI Training" },
+    { "id": "c_15", "name": "Administering Content Using ArcGIS API for Python", "org": "ESRI Training", "date": "Feb 2024", "duration": "1h 30m", "category": "ESRI Training" },
+    { "id": "c_16", "name": "Accessing Data in a Portal Using ArcGIS API for Python", "org": "ESRI Training", "date": "Feb 2024", "duration": "1h", "category": "ESRI Training" },
+    { "id": "c_17", "name": "Performing Analysis Using ArcGIS API for Python", "org": "ESRI Training", "date": "Feb 2024", "duration": "", "category": "ESRI Training" },
+    { "id": "c_18", "name": "Visualizing Data Using ArcGIS API for Python", "org": "ESRI Training", "date": "Feb 2024", "duration": "", "category": "ESRI Training" },
+    { "id": "c_19", "name": "Classifying Objects Using Deep Learning in ArcGIS Pro", "org": "ESRI ArcGIS Lab", "date": "Feb 2024", "duration": "1h 20m", "category": "ESRI Training" },
+    { "id": "c_20", "name": "Deep Learning Using ArcGIS Pro", "org": "ESRI Training", "date": "Feb 2024", "duration": "2h 15m", "category": "ESRI Training" },
+    { "id": "c_21", "name": "GIS for Climate Action", "org": "ESRI MOOC", "date": "Dec 2023", "duration": "6 weeks", "category": "ESRI MOOC" },
+    { "id": "c_22", "name": "Imagery in Action", "org": "ESRI MOOC", "date": "Oct 2023", "duration": "", "category": "ESRI MOOC" },
+    { "id": "c_23", "name": "Spatial Data Science: The New Frontier in Analytics", "org": "ESRI MOOC", "date": "Oct 2023", "duration": "", "category": "ESRI MOOC" },
+    { "id": "c_24", "name": "Research Course: Basic to Advance", "org": "Research Help Bangladesh", "date": "Jul 2023", "duration": "", "category": "Other" }
+  ],
+  "scholarNote": {
+    "label": "Scholar Activities",
+    "mainHtml": "Peer reviewer for <strong>Urban Climate</strong>, <strong>GeoJournal</strong>, <strong>Environmental Earth Sciences</strong>, and other journals.",
+    "subHtml": "Recognised by <strong>Springer Nature</strong> with a Reviewer Certificate for contributions to <em>GeoJournal</em> (2024)."
+  },
+  "contact": {
+    "heading": "Let's build the <em>next dataset</em> together.",
+    "email": "hafizalrezoan@gmail.com",
+    "phone": "+880 1303 266 100",
+    "phoneTel": "+8801303266100",
+    "address": "House 336/4, Kalartek\nKaichabari, Ashulia\nSavar, Dhaka 1349"
+  },
+  "footer": {
+    "left": "© 2026 Hafiz Al Rezoan",
+    "right": "Dhaka, Bangladesh · 23.7°N 90.4°E"
+  }
+}

@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Hafiz Al Rezoan — GIS Analyst & Geospatial Researcher</title>
+<meta name="description" content="Hafiz Al Rezoan — GIS Analyst & Geospatial Researcher in Dhaka, Bangladesh. Nearly seven years of professional experience in spatial data analysis, remote sensing, UAV surveying, and peer-reviewed environmental research."/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
@@ -106,16 +107,6 @@ nav{
   font-size: 2rem; font-weight: 500;
   color: var(--accent); letter-spacing: -0.02em;
 }
-.avatar-upload-btn{
-  position: absolute; bottom: 0; right: 0;
-  width: 28px; height: 28px; border-radius: 50%;
-  background: var(--ink); color: var(--bg);
-  border: 2px solid var(--bg);
-  display: flex; align-items: center; justify-content: center;
-  cursor: pointer; transition: background 0.2s; padding: 0;
-}
-.avatar-upload-btn:hover{ background: var(--accent); }
-.avatar-upload-btn svg{ width: 14px; height: 14px; }
 .profile-name{
   font-family: var(--f-display);
   font-size: 1.25rem; font-weight: 500;
@@ -177,11 +168,6 @@ nav{
 section{ padding: 100px 0; border-bottom: 1px solid var(--rule); }
 section.alt{ background: var(--bg-alt); }
 .section-head{ margin-bottom: 64px; max-width: 760px; }
-.section-head.with-action{
-  display: flex; justify-content: space-between; align-items: flex-end;
-  max-width: none; gap: 32px; flex-wrap: wrap;
-}
-.section-head.with-action > div:first-child{ max-width: 760px; }
 .section-eyebrow{
   font-size: 0.75rem; font-weight: 600;
   letter-spacing: 0.14em; text-transform: uppercase;
@@ -280,7 +266,7 @@ section.alt{ background: var(--bg-alt); }
   display: grid; grid-template-columns: 80px 1fr 100px;
   gap: 32px; padding: 32px 0;
   border-bottom: 1px solid var(--rule);
-  align-items: start; transition: background 0.2s; position: relative;
+  align-items: start; transition: background 0.2s;
 }
 .pub-item:hover{ background: var(--bg-alt); padding-left: 16px; padding-right: 16px; }
 .pub-year{
@@ -308,20 +294,6 @@ section.alt{ background: var(--bg-alt); }
   padding-top: 4px; justify-self: end; transition: color 0.2s;
 }
 .pub-link:hover{ color: var(--accent); }
-
-/* Item delete */
-.item-delete{
-  position: absolute; top: 12px; right: 8px;
-  width: 22px; height: 22px; border-radius: 50%;
-  background: transparent; border: 1px solid var(--rule-strong);
-  color: var(--ink-mute);
-  display: none; align-items: center; justify-content: center;
-  font-size: 14px; line-height: 1;
-  transition: all 0.2s; cursor: pointer; padding: 0; z-index: 2;
-}
-.pub-item:hover .item-delete,
-.course-card:hover .item-delete{ display: flex; }
-.item-delete:hover{ background: #c0392b; border-color: #c0392b; color: white; }
 
 /* EDUCATION */
 .dual-grid{
@@ -393,7 +365,6 @@ section.alt{ background: var(--bg-alt); }
   border-left: 3px solid var(--accent);
   padding: 18px 22px; border-radius: 4px;
   transition: all 0.2s;
-  position: relative;
 }
 .course-card:hover{
   border-left-color: var(--ink);
@@ -402,7 +373,7 @@ section.alt{ background: var(--bg-alt); }
 .course-name{
   font-size: 0.9375rem; font-weight: 500;
   color: var(--ink); line-height: 1.4;
-  margin-bottom: 6px; padding-right: 24px;
+  margin-bottom: 6px;
 }
 .course-meta{
   display: flex; justify-content: space-between;
@@ -415,14 +386,6 @@ section.alt{ background: var(--bg-alt); }
   font-size: 0.75rem;
   color: var(--accent);
   font-weight: 500;
-}
-.course-badge{
-  display: inline-block;
-  font-size: 0.65rem; font-weight: 600;
-  letter-spacing: 0.08em; text-transform: uppercase;
-  color: var(--accent); background: var(--accent-soft);
-  padding: 2px 6px; border-radius: 3px;
-  margin-left: 6px; vertical-align: middle;
 }
 
 .scholar-note{
@@ -480,85 +443,18 @@ footer{
   font-size: 0.8125rem; color: rgba(255,255,255,0.55);
 }
 
-/* MODAL */
-.modal-backdrop{
-  position: fixed; inset: 0;
-  background: rgba(26, 26, 26, 0.5);
-  backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
-  z-index: 200; display: none;
-  align-items: center; justify-content: center; padding: 20px;
-}
-.modal-backdrop.open{ display: flex; }
-.modal{
-  background: var(--surface); border-radius: 12px;
-  width: 100%; max-width: 560px;
-  max-height: 90vh; overflow-y: auto;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
-}
-.modal-header{
-  padding: 24px 28px; border-bottom: 1px solid var(--rule);
-  display: flex; justify-content: space-between; align-items: center;
-}
-.modal-title{
-  font-family: var(--f-display);
-  font-size: 1.375rem; font-weight: 500; color: var(--ink);
-}
-.modal-close{
-  background: transparent; border: none;
-  color: var(--ink-mute); font-size: 1.5rem; line-height: 1;
-  padding: 4px 10px; border-radius: 4px; transition: all 0.2s;
-}
-.modal-close:hover{ background: var(--bg-alt); color: var(--ink); }
-.modal-body{ padding: 28px; }
-.modal-body p.modal-desc{
-  font-size: 0.9375rem; color: var(--ink-soft);
-  margin-bottom: 20px; line-height: 1.55;
-}
-.field{ margin-bottom: 16px; }
-.field:last-of-type{ margin-bottom: 0; }
-.field-row{ display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.input-label{
-  display: block; font-size: 0.8125rem;
-  font-weight: 600; color: var(--ink); margin-bottom: 8px;
-}
-.input{
-  width: 100%; padding: 12px 14px;
-  font-family: var(--f-body); font-size: 0.95rem;
-  border: 1px solid var(--rule-strong); border-radius: 6px;
-  background: var(--bg); color: var(--ink);
-  transition: border-color 0.2s;
-}
-.input:focus{ outline: none; border-color: var(--accent); background: var(--surface); }
-.input-hint{ font-size: 0.8125rem; color: var(--ink-mute); margin-top: 8px; }
-.modal-actions{
-  display: flex; gap: 10px; margin-top: 24px; justify-content: flex-end;
-}
-.btn-sm{ font-size: 0.85rem; padding: 10px 20px; }
-.alert{
-  margin-top: 16px; padding: 12px 14px;
-  border-radius: 6px; font-size: 0.875rem;
-  line-height: 1.5; display: none;
-}
-.alert.show{ display: block; }
-.alert.error{ background: #fdecea; color: #c0392b; border: 1px solid #f5c6c2; }
-.alert.success{ background: var(--accent-soft); color: var(--accent-deep); border: 1px solid #b8d4c1; }
-.alert.loading{ background: #fff8e6; color: #856404; border: 1px solid #f5dca6; }
-
-.pub-badge{
-  display: inline-block;
-  font-size: 0.7rem; font-weight: 600;
-  letter-spacing: 0.08em; text-transform: uppercase;
-  color: var(--accent); background: var(--accent-soft);
-  padding: 2px 8px; border-radius: 3px;
-  margin-left: 8px; vertical-align: middle;
-}
-
 /* Animations */
 .reveal{
   opacity: 0; transform: translateY(20px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 .reveal.in-view{ opacity: 1; transform: translateY(0); }
+
+/* Loading state */
+.loading-state{
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  font-size: 0.9rem; color: var(--ink-mute);
+}
 
 /* Responsive */
 @media (max-width: 900px){
@@ -568,7 +464,6 @@ footer{
   .hero-grid{ grid-template-columns: 1fr; gap: 48px; }
   section{ padding: 70px 0; }
   .section-head{ margin-bottom: 40px; }
-  .section-head.with-action{ flex-direction: column; align-items: flex-start; }
   .about-grid, .dual-grid{ grid-template-columns: 1fr; gap: 40px; }
   .skills-grid{ grid-template-columns: 1fr; }
   .exp-item{ grid-template-columns: 1fr; gap: 12px; padding: 28px 0; }
@@ -577,7 +472,6 @@ footer{
   .pub-item:hover{ padding-left: 0; padding-right: 0; }
   .pub-year{ font-size: 1.125rem; }
   .pub-link{ justify-self: start; }
-  .field-row{ grid-template-columns: 1fr; }
   .contact-section{ padding: 80px 0; }
   .contact-grid{ grid-template-columns: 1fr; gap: 28px; }
   footer{ flex-direction: column; gap: 12px; text-align: center; }
@@ -586,591 +480,17 @@ footer{
 </head>
 <body>
 
-<!-- NAV -->
-<nav>
-  <div class="nav-inner">
-    <div class="nav-logo">Hafiz Al Rezoan<span>.</span></div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#courses">Courses</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-<!-- HERO -->
-<header class="hero">
-  <div class="container">
-    <div class="hero-grid">
-      <div>
-        <div class="profile-row">
-          <div class="avatar" id="avatar">
-            <span class="avatar-initials" id="avatar-initials">HR</span>
-            <img id="avatar-img" style="display:none" alt="Hafiz Al Rezoan"/>
-            <button class="avatar-upload-btn" id="avatar-btn" title="Upload profile photo" aria-label="Upload profile photo">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
-                <circle cx="12" cy="13" r="4"/>
-              </svg>
-            </button>
-            <input type="file" id="avatar-input" accept="image/*" style="display:none"/>
-          </div>
-          <div>
-            <div class="profile-name">Hafiz Al Rezoan</div>
-            <div class="profile-title">GIS Analyst &middot; Dhaka, Bangladesh</div>
-          </div>
-        </div>
-
-        <div class="eyebrow">Geospatial Researcher</div>
-        <h1>Mapping coastal change, urban heat, and the data <em>in between</em>.</h1>
-        <p class="hero-lead">
-          Nearly seven years of professional experience in spatial data analysis, remote sensing, UAV surveying, and peer-reviewed environmental research — based in Dhaka, Bangladesh.
-        </p>
-        <div class="hero-cta">
-          <a href="#contact" class="btn btn-primary">Get in touch</a>
-          <a href="#publications" class="btn btn-secondary">View publications</a>
-        </div>
-      </div>
-
-      <div class="hero-card">
-        <div class="hero-card-header">At a glance</div>
-        <div class="hero-card-row">
-          <span class="label">Current role</span>
-          <span class="value">GIS Analyst</span>
-        </div>
-        <div class="hero-card-row">
-          <span class="label">Organisation</span>
-          <span class="value">Eutech Systems Ltd.</span>
-        </div>
-        <div class="hero-card-row">
-          <span class="label">Education</span>
-          <span class="value">MS, Jahangirnagar Univ.</span>
-        </div>
-        <div class="hero-card-row">
-          <span class="label">Publications</span>
-          <span class="value"><span id="pub-count">4</span> peer-reviewed</span>
-        </div>
-        <div class="hero-card-row">
-          <span class="label">Courses</span>
-          <span class="value"><span id="course-count">0</span> completed</span>
-        </div>
-        <div class="hero-card-row">
-          <span class="label">Location</span>
-          <span class="value">Dhaka, Bangladesh</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<!-- ABOUT -->
-<section id="about">
-  <div class="container">
-    <div class="section-head reveal">
-      <div class="section-eyebrow"><span>01</span> &middot; About</div>
-      <h2 class="section-title">A practitioner of <em>spatial inquiry</em>, working across fieldwork, imagery, and code.</h2>
-    </div>
-
-    <div class="about-grid reveal">
-      <div class="stats">
-        <div class="stat">
-          <div class="stat-num">7<span class="unit">+</span></div>
-          <div class="stat-label">Years in GIS research &amp; analysis</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num" id="stat-pubs">4</div>
-          <div class="stat-label">Peer-reviewed publications</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">3.94<span class="unit">/4</span></div>
-          <div class="stat-label">MS GPA, Jahangirnagar University</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num" id="stat-courses">0</div>
-          <div class="stat-label">Courses &amp; certifications</div>
-        </div>
-      </div>
-
-      <div class="about-prose">
-        <p>
-          I specialise in <strong>multidisciplinary geospatial research</strong>, technical reporting, and the kind of comprehensive documentation that helps complex environmental projects actually finish. Over the last seven years I've coordinated activities across agencies and stakeholders — from local field surveys in coastal Bangladesh to journal-level scientific writing.
-        </p>
-        <p>
-          My core competencies sit across <strong>Geographic Information Systems, remote sensing, UAV surveying, drone data processing, and photogrammetric analysis</strong>. That toolkit increasingly includes Python, R, and deep-learning workflows inside ArcGIS Pro.
-        </p>
-        <p>
-          I'm most useful where geospatial technology meets research method — translating raw imagery, sensor data, and field samples into evidence that supports real decisions.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience" class="alt">
-  <div class="container">
-    <div class="section-head reveal">
-      <div class="section-eyebrow"><span>02</span> &middot; Experience</div>
-      <h2 class="section-title">Field, lab, <em>and everywhere in between</em>.</h2>
-    </div>
-
-    <div class="experience-list reveal">
-      <article class="exp-item">
-        <div class="exp-date">Sep 2024 — Present</div>
-        <div>
-          <div class="exp-role">GIS Analyst</div>
-          <div class="exp-org">Eutech Systems Limited</div>
-        </div>
-        <ul class="exp-tasks">
-          <li>GIS data analysis and geospatial workflows</li>
-          <li>Survey-grade drone piloting</li>
-          <li>Drone photo correction and photogrammetric analysis</li>
-          <li>Operating environmental sensor instruments</li>
-          <li>Coordinating company events and logistics</li>
-        </ul>
-      </article>
-
-      <article class="exp-item">
-        <div class="exp-date">Nov 2023 — Feb 2024</div>
-        <div>
-          <div class="exp-role">Research Consultant</div>
-          <div class="exp-org">CEGIS</div>
-        </div>
-        <ul class="exp-tasks">
-          <li>Map digitising for national-scale datasets</li>
-          <li>Geographic data input and database curation</li>
-          <li>Land-use / land-cover change detection</li>
-          <li>Drainage system updates and validation</li>
-        </ul>
-      </article>
-
-      <article class="exp-item">
-        <div class="exp-date">Jul 2019 — Jul 2023</div>
-        <div>
-          <div class="exp-role">Research Assistant</div>
-          <div class="exp-org">SUST Research Center</div>
-        </div>
-        <ul class="exp-tasks">
-          <li>Geospatial and geostatistical analysis</li>
-          <li>Field-based sample collection</li>
-          <li>Risk-zone assessment for environmental hazards</li>
-          <li>Scientific report writing and documentation</li>
-        </ul>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills">
-  <div class="container">
-    <div class="section-head reveal">
-      <div class="section-eyebrow"><span>03</span> &middot; Toolkit</div>
-      <h2 class="section-title">Tools, languages, <em>and methods</em>.</h2>
-    </div>
-
-    <div class="skills-grid reveal">
-      <div class="skill-card">
-        <h3>Geospatial Analysis</h3>
-        <div class="skill-sub">GIS / Remote Sensing</div>
-        <div class="skill-chips">
-          <span class="chip">ArcGIS</span>
-          <span class="chip">ArcGIS Pro</span>
-          <span class="chip">ERDAS Imagine</span>
-          <span class="chip">SPI</span>
-          <span class="chip">SEPI</span>
-          <span class="chip">DSAS</span>
-        </div>
-      </div>
-
-      <div class="skill-card">
-        <h3>Drone &amp; Photogrammetry</h3>
-        <div class="skill-sub">UAV Surveying</div>
-        <div class="skill-chips">
-          <span class="chip">Survey-Grade UAV</span>
-          <span class="chip">Pix4D</span>
-          <span class="chip">Agisoft Metashape</span>
-          <span class="chip">ArcGIS Drone2Map</span>
-          <span class="chip">Orthomosaic</span>
-        </div>
-      </div>
-
-      <div class="skill-card">
-        <h3>Statistics &amp; Data</h3>
-        <div class="skill-sub">Quantitative Analysis</div>
-        <div class="skill-chips">
-          <span class="chip">SPSS</span>
-          <span class="chip">OriginLab</span>
-          <span class="chip">Excel</span>
-          <span class="chip">KoboToolbox</span>
-        </div>
-      </div>
-
-      <div class="skill-card">
-        <h3>Programming</h3>
-        <div class="skill-sub">Scripting &amp; Automation</div>
-        <div class="skill-chips">
-          <span class="chip">Python</span>
-          <span class="chip">R</span>
-          <span class="chip">ArcGIS API for Python</span>
-          <span class="chip">ArcGIS Notebooks</span>
-          <span class="chip">Deep Learning · ArcGIS Pro</span>
-        </div>
-      </div>
-
-      <div class="skill-card">
-        <h3>Documentation</h3>
-        <div class="skill-sub">Writing &amp; Reporting</div>
-        <div class="skill-chips">
-          <span class="chip">LaTeX</span>
-          <span class="chip">MS Office</span>
-          <span class="chip">Scientific Writing</span>
-        </div>
-      </div>
-
-      <div class="skill-card">
-        <h3>Referencing</h3>
-        <div class="skill-sub">Citation Management</div>
-        <div class="skill-chips">
-          <span class="chip">Zotero</span>
-          <span class="chip">Mendeley</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- PUBLICATIONS -->
-<section id="publications" class="alt">
-  <div class="container">
-    <div class="section-head with-action reveal">
-      <div>
-        <div class="section-eyebrow"><span>04</span> &middot; Publications</div>
-        <h2 class="section-title">Peer-reviewed contributions to <em>environmental science</em>.</h2>
-      </div>
-      <button class="btn btn-primary" id="add-pub-btn">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        Add publication via DOI
-      </button>
-    </div>
-
-    <div class="pubs-list reveal" id="pubs-list"></div>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education">
-  <div class="container">
-    <div class="section-head reveal">
-      <div class="section-eyebrow"><span>05</span> &middot; Education &amp; Research</div>
-      <h2 class="section-title">Formal training, <em>field practice</em>.</h2>
-    </div>
-
-    <div class="dual-grid reveal">
-      <div class="dual-col">
-        <h3>Education</h3>
-        <article class="edu-card">
-          <div class="edu-degree">MS in GIS for Environment and Development</div>
-          <div class="edu-inst">Department of Geography, Jahangirnagar University</div>
-          <div class="edu-meta">
-            <span>Feb 2022 — Dec 2024</span>
-            <span class="edu-grade">CGPA 3.94 / 4.00</span>
-          </div>
-        </article>
-        <article class="edu-card">
-          <div class="edu-degree">BSc in Geography and Environment</div>
-          <div class="edu-inst">Shahjalal University of Science and Technology, Sylhet</div>
-          <div class="edu-meta">
-            <span>Apr 2015 — Oct 2019</span>
-            <span class="edu-grade">CGPA 3.05 / 4.00</span>
-          </div>
-        </article>
-      </div>
-
-      <div class="dual-col">
-        <h3>Student Research</h3>
-        <article class="research-card">
-          <div class="research-title">Comparative Study on the Offshore Islands of Bangladesh</div>
-          <div class="research-inst">SUST, Sylhet · Kutubdia, Maheshkhali, Sonadia, Saint Martin's</div>
-          <p class="research-desc">Identified geomorphological differences across four offshore islands, supporting comparative coastal-hazard analysis.</p>
-          <div class="research-meta"><span>Mar — Jul 2018</span><span>Student Researcher</span></div>
-        </article>
-        <article class="research-card">
-          <div class="research-title">Impacts of Disasters in the Coastal Region of Bangladesh — Kuakata, Patuakhali</div>
-          <div class="research-inst">SUST, Sylhet · SPSS 16, ArcGIS 10.3</div>
-          <p class="research-desc">Analysed, documented, and managed milestones for a multi-stage coastal disaster impact study.</p>
-          <div class="research-meta"><span>Jan 2015 — Sep 2016</span><span>Student Researcher</span></div>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- COURSES -->
-<section id="courses" class="alt">
-  <div class="container">
-    <div class="section-head with-action reveal">
-      <div>
-        <div class="section-eyebrow"><span>06</span> &middot; Continued Learning</div>
-        <h2 class="section-title">ESRI training, research <em>&amp; certifications</em>.</h2>
-      </div>
-      <button class="btn btn-primary" id="add-course-btn">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-        Add course
-      </button>
-    </div>
-
-    <div class="reveal">
-      <div class="courses-filter" id="courses-filter"></div>
-      <div class="courses-grid" id="courses-grid"></div>
-    </div>
-
-    <div class="scholar-note reveal">
-      <div class="label">Scholar Activities</div>
-      <p>Peer reviewer for <strong>Urban Climate</strong>, <strong>GeoJournal</strong>, <strong>Environmental Earth Sciences</strong>, and other journals.</p>
-      <p style="font-size: 0.95rem; font-style: normal; color: var(--ink-soft); margin-top: 12px;">Recognised by <strong>Springer Nature</strong> with a Reviewer Certificate for contributions to <em>GeoJournal</em> (2024).</p>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="contact-section">
-  <div class="container">
-    <div class="reveal">
-      <div class="section-eyebrow" style="color: #a8d5b8;"><span style="color: rgba(255,255,255,0.5);">07</span> &middot; Contact</div>
-      <h2>Let's build the <em>next dataset</em> together.</h2>
-    </div>
-
-    <div class="contact-grid reveal">
-      <div class="contact-block">
-        <div class="contact-label">Email</div>
-        <a class="contact-value" href="mailto:hafizalrezoan@gmail.com">hafizalrezoan@gmail.com</a>
-      </div>
-      <div class="contact-block">
-        <div class="contact-label">Telephone</div>
-        <a class="contact-value" href="tel:+8801303266100">+880 1303 266 100</a>
-      </div>
-      <div class="contact-block">
-        <div class="contact-label">Location</div>
-        <div class="contact-value">House 336/4, Kalartek<br>Kaichabari, Ashulia<br>Savar, Dhaka 1349</div>
-      </div>
-    </div>
-
-    <footer>
-      <div>© 2026 Hafiz Al Rezoan</div>
-      <div>Dhaka, Bangladesh · 23.7°N 90.4°E</div>
-    </footer>
-  </div>
-</section>
-
-<!-- Add Publication Modal -->
-<div class="modal-backdrop" id="pub-modal">
-  <div class="modal">
-    <div class="modal-header">
-      <div class="modal-title">Add publication by DOI</div>
-      <button class="modal-close" data-close="pub-modal" aria-label="Close">&times;</button>
-    </div>
-    <div class="modal-body">
-      <p class="modal-desc">Enter the DOI of your publication. We'll fetch the title, authors, journal, and year from CrossRef automatically.</p>
-      <label class="input-label" for="doi-input">DOI</label>
-      <input type="text" class="input" id="doi-input" placeholder="10.1007/s43621-025-00878-7" autocomplete="off"/>
-      <div class="input-hint">Example: 10.1007/s43621-025-00878-7 &mdash; or paste a full DOI URL.</div>
-      <div class="alert" id="pub-alert"></div>
-      <div class="modal-actions">
-        <button class="btn btn-secondary btn-sm" data-close="pub-modal">Cancel</button>
-        <button class="btn btn-primary btn-sm" id="modal-fetch">Fetch &amp; Add</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Add Course Modal -->
-<div class="modal-backdrop" id="course-modal">
-  <div class="modal">
-    <div class="modal-header">
-      <div class="modal-title">Add course or certification</div>
-      <button class="modal-close" data-close="course-modal" aria-label="Close">&times;</button>
-    </div>
-    <div class="modal-body">
-      <p class="modal-desc">Fill in the details of your course. All fields except duration are required.</p>
-
-      <div class="field">
-        <label class="input-label" for="course-name-input">Course name</label>
-        <input type="text" class="input" id="course-name-input" placeholder="e.g. Advanced Remote Sensing"/>
-      </div>
-
-      <div class="field-row">
-        <div class="field">
-          <label class="input-label" for="course-org-input">Provider</label>
-          <input type="text" class="input" id="course-org-input" placeholder="e.g. ESRI Training"/>
-        </div>
-        <div class="field">
-          <label class="input-label" for="course-year-input">Year / Date</label>
-          <input type="text" class="input" id="course-year-input" placeholder="e.g. 2024 or May 2024"/>
-        </div>
-      </div>
-
-      <div class="field">
-        <label class="input-label" for="course-duration-input">Duration <span style="font-weight: 400; color: var(--ink-mute);">(optional)</span></label>
-        <input type="text" class="input" id="course-duration-input" placeholder="e.g. 2 hours, 6 weeks"/>
-      </div>
-
-      <div class="alert" id="course-alert"></div>
-
-      <div class="modal-actions">
-        <button class="btn btn-secondary btn-sm" data-close="course-modal">Cancel</button>
-        <button class="btn btn-primary btn-sm" id="course-save">Add course</button>
-      </div>
-    </div>
-  </div>
+<div id="root">
+  <div class="loading-state">Loading…</div>
 </div>
 
 <script>
 /* =========================================================
-   DEFAULT DATA
+   PUBLIC PORTFOLIO — read-only view
+   Loads data.json (with cache-bust) and renders all sections.
+   Edits happen via /admin.html.
    ========================================================= */
 
-const DEFAULT_PUBLICATIONS = [
-  {
-    year: 2025,
-    title: "The impact of staple crop price instability and fragmented policy on food security and sustainable development: A case study from Bangladesh",
-    authorsHtml: "Ahmed, Z., Kadir, A., Alam, R., <strong>Hafiz-Al-Rezoan</strong>, &amp; Laskor, Md. A. H.",
-    journal: "Discover Sustainability · 6(1), Article 1",
-    doi: "10.1007/s43621-025-00878-7"
-  },
-  {
-    year: 2024,
-    title: "Influence of green space on land surface temperature in the coastal cities in Bangladesh",
-    authorsHtml: "Islam, T., Ahmed, Z., Kadir, A., Ambinakudige, S., Ahad, I., Hassan, R., <strong>Hafiz-Al-Rezoan</strong>, Hossain, S., &amp; Pohil, A.H.",
-    journal: "Environment, Development and Sustainability",
-    doi: "10.1007/s10668-024-05112-4"
-  },
-  {
-    year: 2022,
-    title: "Perceived Human-Induced Causes of Landslide in Chattogram Metropolitan Area in Bangladesh",
-    authorsHtml: "Ahmed, Z., Hussain, A.H.M.B., Ambinakudige, S., Ahmed, M.N.Q., Alam, R., <strong>Rezoan, H.-A.</strong>, Das Dola, D., Rahman, M.M., Hassan, R., &amp; Mahmud, S.",
-    journal: "Earth Systems and Environment · 6(2), 499–515",
-    doi: "10.1007/s41748-022-00304-2"
-  },
-  {
-    year: 2021,
-    title: "Spatio-temporal analysis of heavy metals in the sediment of lower Meghna river using contamination indices, multivariate statistics and GIS techniques",
-    authorsHtml: "Ahmed, Z., Alam, R., Basak, R., <strong>Al Rezoan, H.</strong>, &amp; Acharjee, A.",
-    journal: "Environmental Earth Sciences · 80(21), 715",
-    doi: "10.1007/s12665-021-09997-6"
-  }
-];
-
-/* Default courses — deduplicated full list from resume + ESRI certificates.
-   Sorted newest first within categories. Provider key controls filter chip. */
-const DEFAULT_COURSES = [
-  // 2024 ESRI Training / Lab — sorted by completion date desc
-  { name: "Data QC with ArcGIS: Automating Validation", org: "ESRI Training", date: "May 2024", duration: "2h 45m", category: "ESRI Training" },
-  { name: "Data QC with ArcGIS: Visual Review", org: "ESRI Training", date: "May 2024", duration: "2h 15m", category: "ESRI Training" },
-  { name: "Downscaling a Prediction Model Using ArcGIS Notebooks and ArcGIS Pro", org: "ESRI ArcGIS Lab", date: "May 2024", duration: "2h 15m", category: "ESRI Training" },
-  { name: "Creating Prediction Surfaces in ArcGIS", org: "ESRI Training", date: "May 2024", duration: "5h 15m", category: "ESRI Training" },
-  { name: "ArcGIS Drone2Map Basics", org: "ESRI Training", date: "May 2024", duration: "2h 10m", category: "ESRI Training" },
-  { name: "Creating a Knowledge Graph from Structured Data Using ArcGIS Knowledge", org: "ESRI ArcGIS Lab", date: "May 2024", duration: "2h 40m", category: "ESRI Training" },
-  { name: "ArcGIS Notebooks Basics", org: "ESRI Training", date: "Mar 2024", duration: "1h", category: "ESRI Training" },
-  { name: "Creating a Web Map in ArcGIS Pro", org: "ESRI Training", date: "Mar 2024", duration: "3h 5m", category: "ESRI Training" },
-  { name: "Getting Started with Geoprocessing", org: "ESRI Training", date: "Mar 2024", duration: "1h 30m", category: "ESRI Training" },
-  { name: "Geostatistical Interpolation: Introduction", org: "ESRI Training", date: "Mar 2024", duration: "2h", category: "ESRI Training" },
-  { name: "Getting Started with Spatial Analysis", org: "ESRI Training", date: "Mar 2024", duration: "1h 10m", category: "ESRI Training" },
-  { name: "Getting Started with the Geodatabase", org: "ESRI Training", date: "Mar 2024", duration: "3h 30m", category: "ESRI Training" },
-  { name: "Creating Python Scripts for Raster Analysis", org: "ESRI Training", date: "Feb 2024", duration: "1h", category: "ESRI Training" },
-  { name: "Change Detection Using Imagery", org: "ESRI Training", date: "Feb 2024", duration: "2h 30m", category: "ESRI Training" },
-  { name: "Administering Content Using ArcGIS API for Python", org: "ESRI Training", date: "Feb 2024", duration: "1h 30m", category: "ESRI Training" },
-  { name: "Accessing Data in a Portal Using ArcGIS API for Python", org: "ESRI Training", date: "Feb 2024", duration: "1h", category: "ESRI Training" },
-  { name: "Performing Analysis Using ArcGIS API for Python", org: "ESRI Training", date: "Feb 2024", duration: "", category: "ESRI Training" },
-  { name: "Visualizing Data Using ArcGIS API for Python", org: "ESRI Training", date: "Feb 2024", duration: "", category: "ESRI Training" },
-  { name: "Classifying Objects Using Deep Learning in ArcGIS Pro", org: "ESRI ArcGIS Lab", date: "Feb 2024", duration: "1h 20m", category: "ESRI Training" },
-  { name: "Deep Learning Using ArcGIS Pro", org: "ESRI Training", date: "Feb 2024", duration: "2h 15m", category: "ESRI Training" },
-  // ESRI MOOCs
-  { name: "GIS for Climate Action", org: "ESRI MOOC", date: "Dec 2023", duration: "6 weeks", category: "ESRI MOOC" },
-  { name: "Imagery in Action", org: "ESRI MOOC", date: "Oct 2023", duration: "", category: "ESRI MOOC" },
-  { name: "Spatial Data Science: The New Frontier in Analytics", org: "ESRI MOOC", date: "Oct 2023", duration: "", category: "ESRI MOOC" },
-  // Other
-  { name: "Research Course: Basic to Advance", org: "Research Help Bangladesh", date: "Jul 2023", duration: "", category: "Other" }
-];
-
-/* =========================================================
-   STORAGE
-   ========================================================= */
-const STORAGE_KEYS = {
-  AVATAR: 'profile-avatar',
-  PUBS: 'user-publications',
-  COURSES: 'user-courses'
-};
-
-async function storageGet(key){
-  try{
-    if(window.storage){
-      const r = await window.storage.get(key);
-      return r ? r.value : null;
-    }
-  }catch(_){}
-  try{ return localStorage.getItem(key); }catch(_){ return null; }
-}
-async function storageSet(key, value){
-  try{
-    if(window.storage){ await window.storage.set(key, value); return; }
-  }catch(_){}
-  try{ localStorage.setItem(key, value); }catch(_){}
-}
-
-/* =========================================================
-   AVATAR
-   ========================================================= */
-const avatarImg = document.getElementById('avatar-img');
-const avatarInitials = document.getElementById('avatar-initials');
-const avatarBtn = document.getElementById('avatar-btn');
-const avatarInput = document.getElementById('avatar-input');
-
-avatarBtn.addEventListener('click', () => avatarInput.click());
-
-avatarInput.addEventListener('change', async (e) => {
-  const file = e.target.files[0];
-  if(!file) return;
-  if(!file.type.startsWith('image/')){ alert('Please choose an image file.'); return; }
-  const dataUrl = await resizeImage(file, 400);
-  setAvatar(dataUrl);
-  await storageSet(STORAGE_KEYS.AVATAR, dataUrl);
-});
-
-function setAvatar(dataUrl){
-  avatarImg.src = dataUrl;
-  avatarImg.style.display = 'block';
-  avatarInitials.style.display = 'none';
-}
-
-function resizeImage(file, maxSize){
-  return new Promise((resolve) => {
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      const img = new Image();
-      img.onload = () => {
-        const canvas = document.createElement('canvas');
-        let w = img.width, h = img.height;
-        if(w > h){ if(w > maxSize){ h = h * (maxSize / w); w = maxSize; } }
-        else { if(h > maxSize){ w = w * (maxSize / h); h = maxSize; } }
-        canvas.width = w; canvas.height = h;
-        const ctx = canvas.getContext('2d');
-        ctx.drawImage(img, 0, 0, w, h);
-        resolve(canvas.toDataURL('image/jpeg', 0.85));
-      };
-      img.src = e.target.result;
-    };
-    reader.readAsDataURL(file);
-  });
-}
-
-/* =========================================================
-   UTILITIES
-   ========================================================= */
 function escapeHtml(str){
   if(str === null || str === undefined) return '';
   return String(str).replace(/[&<>"']/g, (c) => ({
@@ -1178,330 +498,387 @@ function escapeHtml(str){
   })[c]);
 }
 
-/* =========================================================
-   PUBLICATIONS
-   ========================================================= */
-const pubsList = document.getElementById('pubs-list');
-const pubCount = document.getElementById('pub-count');
-const statPubs = document.getElementById('stat-pubs');
-let userPubs = [];
+function safeHtml(s){ return s == null ? '' : String(s); }
 
-function renderPublications(){
-  const all = [
-    ...DEFAULT_PUBLICATIONS.map(p => ({...p, userAdded: false})),
-    ...userPubs.map(p => ({...p, userAdded: true}))
-  ];
-  all.sort((a, b) => (b.year || 0) - (a.year || 0));
-
-  pubsList.innerHTML = all.map((p) => `
-    <article class="pub-item">
-      <div class="pub-year">${escapeHtml(p.year || '—')}</div>
-      <div>
-        <span class="pub-title">${p.titleHtml || escapeHtml(p.title)}${p.userAdded ? '<span class="pub-badge">New</span>' : ''}</span>
-        <span class="pub-authors">${p.authorsHtml || escapeHtml(p.authors || '')}</span>
-        <span class="pub-journal">${p.journalHtml || escapeHtml(p.journal || '')}</span>
+function renderNav(data){
+  return `
+    <nav>
+      <div class="nav-inner">
+        <div class="nav-logo">${escapeHtml(data.site.logoName)}<span>.</span></div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-      <a class="pub-link" href="https://doi.org/${encodeURIComponent(p.doi)}" target="_blank" rel="noopener">DOI →</a>
-      ${p.userAdded ? `<button class="item-delete" data-pub-delete="${p.id}" title="Remove">&times;</button>` : ''}
-    </article>
-  `).join('');
-
-  const total = all.length;
-  pubCount.textContent = total;
-  statPubs.textContent = total;
-
-  pubsList.querySelectorAll('[data-pub-delete]').forEach(btn => {
-    btn.addEventListener('click', async (e) => {
-      e.stopPropagation();
-      const id = btn.getAttribute('data-pub-delete');
-      if(confirm('Remove this publication?')){
-        userPubs = userPubs.filter(p => p.id !== id);
-        await storageSet(STORAGE_KEYS.PUBS, JSON.stringify(userPubs));
-        renderPublications();
-      }
-    });
-  });
+    </nav>
+  `;
 }
 
-/* DOI fetch */
-function cleanDoi(input){
-  if(!input) return '';
-  let s = input.trim();
-  s = s.replace(/^https?:\/\/(dx\.)?doi\.org\//i, '');
-  s = s.replace(/^doi:\s*/i, '');
-  return s;
-}
-
-async function fetchDoiMetadata(doi){
-  const url = `https://api.crossref.org/works/${encodeURIComponent(doi)}`;
-  const resp = await fetch(url, { headers: { 'Accept': 'application/json' } });
-  if(!resp.ok){
-    throw new Error(resp.status === 404 ? 'DOI not found on CrossRef.' : `Lookup failed (HTTP ${resp.status}).`);
+function renderAvatar(profile){
+  if(profile.avatarUrl){
+    return `<div class="avatar"><img src="${escapeHtml(profile.avatarUrl)}" alt="${escapeHtml(profile.name)}"/></div>`;
   }
-  const json = await resp.json();
-  return json.message;
+  return `<div class="avatar"><span class="avatar-initials">${escapeHtml(profile.initials || 'HR')}</span></div>`;
 }
 
-function formatAuthors(authorList){
-  if(!authorList || !authorList.length) return '';
-  const fmt = (a) => {
-    const family = a.family || '';
-    const given = a.given ? a.given.split(/\s+/).map(p => p[0] ? p[0] + '.' : '').join(' ') : '';
-    return [family, given].filter(Boolean).join(', ');
-  };
-  const names = authorList.map(fmt);
-  const highlighted = names.map(n =>
-    /rezoan|hafiz/i.test(n) ? `<strong>${escapeHtml(n)}</strong>` : escapeHtml(n)
-  );
-  if(highlighted.length === 1) return highlighted[0];
-  if(highlighted.length === 2) return highlighted.join(' &amp; ');
-  return highlighted.slice(0, -1).join(', ') + ', &amp; ' + highlighted[highlighted.length - 1];
-}
-
-function formatJournal(msg){
-  const journal = (msg['container-title'] && msg['container-title'][0]) || msg['publisher'] || '';
-  const volume = msg.volume ? `${msg.volume}` : '';
-  const issue = msg.issue ? `(${msg.issue})` : '';
-  const page = msg.page ? `, ${msg.page}` : '';
-  const articleNum = msg['article-number'] ? `, Article ${msg['article-number']}` : '';
-  let detail = '';
-  if(volume || issue) detail = ` · ${volume}${issue}${page}${articleNum}`;
-  else if(page) detail = ` · ${page}`;
-  else if(articleNum) detail = ` ·${articleNum}`;
-  return `<em>${escapeHtml(journal)}</em>${detail}`;
-}
-
-function getYear(msg){
-  const issued = msg.issued || msg['published-print'] || msg['published-online'] || msg.created;
-  if(issued && issued['date-parts'] && issued['date-parts'][0]){
-    return issued['date-parts'][0][0];
-  }
-  return '';
-}
-
-/* =========================================================
-   COURSES
-   ========================================================= */
-const coursesGrid = document.getElementById('courses-grid');
-const coursesFilter = document.getElementById('courses-filter');
-const courseCount = document.getElementById('course-count');
-const statCourses = document.getElementById('stat-courses');
-let userCourses = [];
-let activeFilter = 'All';
-
-function renderCourses(){
-  const all = [
-    ...DEFAULT_COURSES.map(c => ({...c, userAdded: false})),
-    ...userCourses.map(c => ({...c, userAdded: true}))
+function renderHero(data){
+  const pubCount = data.publications.length;
+  const courseCount = data.courses.length;
+  const cardRows = [
+    ...data.hero.cardRows.slice(0, 3),
+    { label: 'Publications', value: `${pubCount} peer-reviewed` },
+    { label: 'Courses', value: `${courseCount} completed` },
+    ...data.hero.cardRows.slice(3)
   ];
 
-  const total = all.length;
-  courseCount.textContent = total;
-  statCourses.textContent = total;
+  return `
+    <header class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <div class="profile-row">
+              ${renderAvatar(data.profile)}
+              <div>
+                <div class="profile-name">${escapeHtml(data.profile.name)}</div>
+                <div class="profile-title">${escapeHtml(data.profile.shortTitle)} &middot; ${escapeHtml(data.profile.location)}</div>
+              </div>
+            </div>
 
-  // Build filter chips
+            <div class="eyebrow">${escapeHtml(data.hero.eyebrow)}</div>
+            <h1>${safeHtml(data.hero.headline)}</h1>
+            <p class="hero-lead">${escapeHtml(data.hero.lead)}</p>
+            <div class="hero-cta">
+              <a href="#contact" class="btn btn-primary">${escapeHtml(data.hero.ctaPrimaryLabel)}</a>
+              <a href="#publications" class="btn btn-secondary">${escapeHtml(data.hero.ctaSecondaryLabel)}</a>
+            </div>
+          </div>
+
+          <div class="hero-card">
+            <div class="hero-card-header">${escapeHtml(data.hero.cardHeading)}</div>
+            ${cardRows.map(r => `
+              <div class="hero-card-row">
+                <span class="label">${escapeHtml(r.label)}</span>
+                <span class="value">${escapeHtml(r.value)}</span>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      </div>
+    </header>
+  `;
+}
+
+function renderAbout(data){
+  const pubCount = data.publications.length;
+  const courseCount = data.courses.length;
+  const userStats = data.about.stats || [];
+  // Compose: stat[0] (years), pub count, stat[1] (GPA), course count
+  const stats = [
+    userStats[0],
+    { num: String(pubCount), unit: '', label: 'Peer-reviewed publications' },
+    userStats[1],
+    { num: String(courseCount), unit: '', label: 'Courses & certifications' }
+  ].filter(Boolean);
+
+  return `
+    <section id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-eyebrow"><span>01</span> &middot; About</div>
+          <h2 class="section-title">${safeHtml(data.about.title)}</h2>
+        </div>
+
+        <div class="about-grid reveal">
+          <div class="stats">
+            ${stats.map(s => `
+              <div class="stat">
+                <div class="stat-num">${escapeHtml(s.num)}${s.unit ? `<span class="unit">${escapeHtml(s.unit)}</span>` : ''}</div>
+                <div class="stat-label">${escapeHtml(s.label)}</div>
+              </div>
+            `).join('')}
+          </div>
+
+          <div class="about-prose">
+            ${data.about.paragraphs.map(p => `<p>${safeHtml(p)}</p>`).join('')}
+          </div>
+        </div>
+      </div>
+    </section>
+  `;
+}
+
+function renderExperience(data){
+  return `
+    <section id="experience" class="alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-eyebrow"><span>02</span> &middot; Experience</div>
+          <h2 class="section-title">Field, lab, <em>and everywhere in between</em>.</h2>
+        </div>
+
+        <div class="experience-list reveal">
+          ${data.experience.map(e => `
+            <article class="exp-item">
+              <div class="exp-date">${escapeHtml(e.date)}</div>
+              <div>
+                <div class="exp-role">${escapeHtml(e.role)}</div>
+                <div class="exp-org">${escapeHtml(e.org)}</div>
+              </div>
+              <ul class="exp-tasks">
+                ${e.tasks.map(t => `<li>${escapeHtml(t)}</li>`).join('')}
+              </ul>
+            </article>
+          `).join('')}
+        </div>
+      </div>
+    </section>
+  `;
+}
+
+function renderSkills(data){
+  return `
+    <section id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-eyebrow"><span>03</span> &middot; Toolkit</div>
+          <h2 class="section-title">Tools, languages, <em>and methods</em>.</h2>
+        </div>
+
+        <div class="skills-grid reveal">
+          ${data.skills.map(s => `
+            <div class="skill-card">
+              <h3>${escapeHtml(s.heading)}</h3>
+              <div class="skill-sub">${escapeHtml(s.sub)}</div>
+              <div class="skill-chips">
+                ${s.chips.map(c => `<span class="chip">${escapeHtml(c)}</span>`).join('')}
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    </section>
+  `;
+}
+
+function renderPublications(data){
+  const sorted = [...data.publications].sort((a, b) => (b.year || 0) - (a.year || 0));
+  return `
+    <section id="publications" class="alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-eyebrow"><span>04</span> &middot; Publications</div>
+          <h2 class="section-title">Peer-reviewed contributions to <em>environmental science</em>.</h2>
+        </div>
+
+        <div class="pubs-list reveal">
+          ${sorted.map(p => `
+            <article class="pub-item">
+              <div class="pub-year">${escapeHtml(p.year || '—')}</div>
+              <div>
+                <span class="pub-title">${escapeHtml(p.title)}</span>
+                <span class="pub-authors">${safeHtml(p.authorsHtml || escapeHtml(p.authors || ''))}</span>
+                <span class="pub-journal">${safeHtml(p.journalHtml || `<em>${escapeHtml(p.journal || '')}</em>`)}</span>
+              </div>
+              ${p.doi ? `<a class="pub-link" href="https://doi.org/${encodeURIComponent(p.doi)}" target="_blank" rel="noopener">DOI →</a>` : ''}
+            </article>
+          `).join('')}
+        </div>
+      </div>
+    </section>
+  `;
+}
+
+function renderEducation(data){
+  return `
+    <section id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-eyebrow"><span>05</span> &middot; Education &amp; Research</div>
+          <h2 class="section-title">Formal training, <em>field practice</em>.</h2>
+        </div>
+
+        <div class="dual-grid reveal">
+          <div class="dual-col">
+            <h3>Education</h3>
+            ${data.education.map(e => `
+              <article class="edu-card">
+                <div class="edu-degree">${escapeHtml(e.degree)}</div>
+                <div class="edu-inst">${escapeHtml(e.institution)}</div>
+                <div class="edu-meta">
+                  <span>${escapeHtml(e.dates)}</span>
+                  ${e.grade ? `<span class="edu-grade">${escapeHtml(e.grade)}</span>` : ''}
+                </div>
+              </article>
+            `).join('')}
+          </div>
+
+          <div class="dual-col">
+            <h3>Student Research</h3>
+            ${data.research.map(r => `
+              <article class="research-card">
+                <div class="research-title">${escapeHtml(r.title)}</div>
+                <div class="research-inst">${escapeHtml(r.institution)}</div>
+                <p class="research-desc">${escapeHtml(r.description)}</p>
+                <div class="research-meta"><span>${escapeHtml(r.dates)}</span><span>${escapeHtml(r.role)}</span></div>
+              </article>
+            `).join('')}
+          </div>
+        </div>
+      </div>
+    </section>
+  `;
+}
+
+function renderCourses(data){
+  const all = data.courses;
+  const total = all.length;
+
+  // Build categories
   const categories = ['All'];
   all.forEach(c => {
     const cat = c.category || c.org || 'Other';
     if(!categories.includes(cat)) categories.push(cat);
   });
 
-  coursesFilter.innerHTML = categories.map(cat => {
-    const count = cat === 'All' ? total : all.filter(c => (c.category || c.org || 'Other') === cat).length;
-    return `<button class="filter-btn ${cat === activeFilter ? 'active' : ''}" data-filter="${escapeHtml(cat)}">
-      ${escapeHtml(cat)} <span class="count">${count}</span>
-    </button>`;
-  }).join('');
+  return `
+    <section id="courses" class="alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-eyebrow"><span>06</span> &middot; Continued Learning</div>
+          <h2 class="section-title">ESRI training, research <em>&amp; certifications</em>.</h2>
+        </div>
 
-  coursesFilter.querySelectorAll('[data-filter]').forEach(btn => {
-    btn.addEventListener('click', () => {
-      activeFilter = btn.getAttribute('data-filter');
-      renderCourses();
-    });
-  });
+        <div class="reveal">
+          <div class="courses-filter" id="courses-filter">
+            ${categories.map((cat, i) => {
+              const count = cat === 'All' ? total : all.filter(c => (c.category || c.org || 'Other') === cat).length;
+              return `<button class="filter-btn ${i === 0 ? 'active' : ''}" data-filter="${escapeHtml(cat)}">
+                ${escapeHtml(cat)} <span class="count">${count}</span>
+              </button>`;
+            }).join('')}
+          </div>
+          <div class="courses-grid" id="courses-grid">
+            ${all.map(c => `
+              <div class="course-card" data-cat="${escapeHtml(c.category || c.org || 'Other')}">
+                <div class="course-name">${escapeHtml(c.name)}</div>
+                <div class="course-meta">
+                  <span class="course-org">${escapeHtml(c.org)} &middot; ${escapeHtml(c.date)}</span>
+                  ${c.duration ? `<span class="course-duration">${escapeHtml(c.duration)}</span>` : ''}
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </div>
 
-  // Filter visible items
-  const visible = activeFilter === 'All'
-    ? all
-    : all.filter(c => (c.category || c.org || 'Other') === activeFilter);
-
-  coursesGrid.innerHTML = visible.map((c) => `
-    <div class="course-card">
-      <div class="course-name">${escapeHtml(c.name)}${c.userAdded ? '<span class="course-badge">New</span>' : ''}</div>
-      <div class="course-meta">
-        <span class="course-org">${escapeHtml(c.org)} · ${escapeHtml(c.date)}</span>
-        ${c.duration ? `<span class="course-duration">${escapeHtml(c.duration)}</span>` : ''}
+        ${data.scholarNote ? `
+          <div class="scholar-note reveal">
+            <div class="label">${escapeHtml(data.scholarNote.label)}</div>
+            <p>${safeHtml(data.scholarNote.mainHtml)}</p>
+            ${data.scholarNote.subHtml ? `<p style="font-size: 0.95rem; font-style: normal; color: var(--ink-soft); margin-top: 12px;">${safeHtml(data.scholarNote.subHtml)}</p>` : ''}
+          </div>
+        ` : ''}
       </div>
-      ${c.userAdded ? `<button class="item-delete" data-course-delete="${c.id}" title="Remove">&times;</button>` : ''}
-    </div>
-  `).join('');
+    </section>
+  `;
+}
 
-  coursesGrid.querySelectorAll('[data-course-delete]').forEach(btn => {
-    btn.addEventListener('click', async (e) => {
-      e.stopPropagation();
-      const id = btn.getAttribute('data-course-delete');
-      if(confirm('Remove this course?')){
-        userCourses = userCourses.filter(c => c.id !== id);
-        await storageSet(STORAGE_KEYS.COURSES, JSON.stringify(userCourses));
-        renderCourses();
-      }
+function renderContact(data){
+  const addr = (data.contact.address || '').split('\n').map(escapeHtml).join('<br>');
+  return `
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="reveal">
+          <div class="section-eyebrow" style="color: #a8d5b8;"><span style="color: rgba(255,255,255,0.5);">07</span> &middot; Contact</div>
+          <h2>${safeHtml(data.contact.heading)}</h2>
+        </div>
+
+        <div class="contact-grid reveal">
+          <div class="contact-block">
+            <div class="contact-label">Email</div>
+            <a class="contact-value" href="mailto:${escapeHtml(data.contact.email)}">${escapeHtml(data.contact.email)}</a>
+          </div>
+          <div class="contact-block">
+            <div class="contact-label">Telephone</div>
+            <a class="contact-value" href="tel:${escapeHtml(data.contact.phoneTel || data.contact.phone)}">${escapeHtml(data.contact.phone)}</a>
+          </div>
+          <div class="contact-block">
+            <div class="contact-label">Location</div>
+            <div class="contact-value">${addr}</div>
+          </div>
+        </div>
+
+        <footer>
+          <div>${escapeHtml(data.footer.left)}</div>
+          <div>${escapeHtml(data.footer.right)}</div>
+        </footer>
+      </div>
+    </section>
+  `;
+}
+
+function wireCourseFilters(){
+  const filter = document.getElementById('courses-filter');
+  const grid = document.getElementById('courses-grid');
+  if(!filter || !grid) return;
+  filter.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-filter]');
+    if(!btn) return;
+    const cat = btn.getAttribute('data-filter');
+    filter.querySelectorAll('.filter-btn').forEach(b => b.classList.toggle('active', b === btn));
+    grid.querySelectorAll('.course-card').forEach(card => {
+      const show = cat === 'All' || card.getAttribute('data-cat') === cat;
+      card.style.display = show ? '' : 'none';
     });
   });
 }
 
-/* =========================================================
-   MODAL CONTROL
-   ========================================================= */
-function openModal(id){
-  document.getElementById(id).classList.add('open');
-}
-function closeModal(id){
-  document.getElementById(id).classList.remove('open');
-  // Clear alerts
-  const alert = document.querySelector(`#${id} .alert`);
-  if(alert){ alert.classList.remove('show', 'error', 'success', 'loading'); alert.textContent = ''; }
-}
-
-document.querySelectorAll('[data-close]').forEach(btn => {
-  btn.addEventListener('click', () => closeModal(btn.getAttribute('data-close')));
-});
-document.querySelectorAll('.modal-backdrop').forEach(m => {
-  m.addEventListener('click', (e) => { if(e.target === m) closeModal(m.id); });
-});
-document.addEventListener('keydown', (e) => {
-  if(e.key === 'Escape'){
-    document.querySelectorAll('.modal-backdrop.open').forEach(m => closeModal(m.id));
-  }
-});
-
-function showAlert(id, kind, message){
-  const a = document.getElementById(id);
-  a.className = `alert show ${kind}`;
-  a.textContent = message;
-}
-
-/* Publication modal */
-document.getElementById('add-pub-btn').addEventListener('click', () => {
-  document.getElementById('doi-input').value = '';
-  openModal('pub-modal');
-  setTimeout(() => document.getElementById('doi-input').focus(), 50);
-});
-
-document.getElementById('doi-input').addEventListener('keydown', (e) => {
-  if(e.key === 'Enter') document.getElementById('modal-fetch').click();
-});
-
-document.getElementById('modal-fetch').addEventListener('click', async () => {
-  const fetchBtn = document.getElementById('modal-fetch');
-  const doi = cleanDoi(document.getElementById('doi-input').value);
-  if(!doi){ showAlert('pub-alert', 'error', 'Please enter a DOI.'); return; }
-  if(!/^10\.\d{4,9}\//.test(doi)){
-    showAlert('pub-alert', 'error', 'That doesn\'t look like a valid DOI. DOIs start with "10." followed by a registrant code.');
-    return;
-  }
-  const allDois = [
-    ...DEFAULT_PUBLICATIONS.map(p => p.doi.toLowerCase()),
-    ...userPubs.map(p => p.doi.toLowerCase())
-  ];
-  if(allDois.includes(doi.toLowerCase())){
-    showAlert('pub-alert', 'error', 'This publication is already in your list.');
-    return;
-  }
-  showAlert('pub-alert', 'loading', 'Fetching from CrossRef…');
-  fetchBtn.disabled = true;
-  try{
-    const msg = await fetchDoiMetadata(doi);
-    const title = (msg.title && msg.title[0]) || 'Untitled';
-    userPubs.push({
-      id: 'p_' + Date.now(),
-      doi: doi,
-      year: getYear(msg),
-      title: title,
-      titleHtml: escapeHtml(title),
-      authorsHtml: formatAuthors(msg.author || []),
-      journalHtml: formatJournal(msg),
-      userAdded: true
-    });
-    await storageSet(STORAGE_KEYS.PUBS, JSON.stringify(userPubs));
-    renderPublications();
-    showAlert('pub-alert', 'success', 'Added! Closing…');
-    setTimeout(() => closeModal('pub-modal'), 900);
-  }catch(err){
-    showAlert('pub-alert', 'error', err.message || 'Could not fetch this DOI.');
-  }finally{
-    fetchBtn.disabled = false;
-  }
-});
-
-/* Course modal */
-document.getElementById('add-course-btn').addEventListener('click', () => {
-  ['course-name-input', 'course-org-input', 'course-year-input', 'course-duration-input']
-    .forEach(id => document.getElementById(id).value = '');
-  openModal('course-modal');
-  setTimeout(() => document.getElementById('course-name-input').focus(), 50);
-});
-
-document.getElementById('course-save').addEventListener('click', async () => {
-  const name = document.getElementById('course-name-input').value.trim();
-  const org = document.getElementById('course-org-input').value.trim();
-  const date = document.getElementById('course-year-input').value.trim();
-  const duration = document.getElementById('course-duration-input').value.trim();
-
-  if(!name || !org || !date){
-    showAlert('course-alert', 'error', 'Course name, provider, and date are required.');
-    return;
-  }
-  // Duplicate check (by name, case-insensitive)
-  const allNames = [
-    ...DEFAULT_COURSES.map(c => c.name.toLowerCase()),
-    ...userCourses.map(c => c.name.toLowerCase())
-  ];
-  if(allNames.includes(name.toLowerCase())){
-    showAlert('course-alert', 'error', 'A course with this name already exists in your list.');
-    return;
-  }
-
-  userCourses.push({
-    id: 'c_' + Date.now(),
-    name, org, date, duration,
-    category: org
-  });
-  await storageSet(STORAGE_KEYS.COURSES, JSON.stringify(userCourses));
-  renderCourses();
-  showAlert('course-alert', 'success', 'Course added! Closing…');
-  setTimeout(() => closeModal('course-modal'), 700);
-});
-
-/* =========================================================
-   INIT
-   ========================================================= */
-(async function init(){
-  // Avatar
-  const savedAvatar = await storageGet(STORAGE_KEYS.AVATAR);
-  if(savedAvatar) setAvatar(savedAvatar);
-
-  // Pubs
-  const savedPubs = await storageGet(STORAGE_KEYS.PUBS);
-  if(savedPubs){
-    try{ userPubs = JSON.parse(savedPubs) || []; }catch(_){ userPubs = []; }
-  }
-  renderPublications();
-
-  // Courses
-  const savedCourses = await storageGet(STORAGE_KEYS.COURSES);
-  if(savedCourses){
-    try{ userCourses = JSON.parse(savedCourses) || []; }catch(_){ userCourses = []; }
-  }
-  renderCourses();
-
-  // Scroll reveal
+function wireReveal(){
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
       if(e.isIntersecting){ e.target.classList.add('in-view'); io.unobserve(e.target); }
     });
   }, { threshold: 0.12 });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
-})();
+}
+
+async function loadAndRender(){
+  try{
+    // Cache-bust so updated data.json shows up immediately after admin save
+    const resp = await fetch(`data.json?t=${Date.now()}`, { cache: 'no-store' });
+    if(!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const data = await resp.json();
+
+    document.title = data.site.title;
+    document.getElementById('root').innerHTML =
+      renderNav(data) +
+      renderHero(data) +
+      renderAbout(data) +
+      renderExperience(data) +
+      renderSkills(data) +
+      renderPublications(data) +
+      renderEducation(data) +
+      renderCourses(data) +
+      renderContact(data);
+
+    wireCourseFilters();
+    wireReveal();
+  }catch(err){
+    document.getElementById('root').innerHTML = `
+      <div class="loading-state">
+        Could not load portfolio data (${escapeHtml(err.message)}).<br>
+        Please refresh in a moment.
+      </div>
+    `;
+    console.error(err);
+  }
+}
+
+loadAndRender();
 </script>
 </body>
 </html>
