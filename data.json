@@ -104,8 +104,6 @@
         "ArcGIS",
         "ArcGIS Pro",
         "ERDAS Imagine",
-        "SPI",
-        "SEPI",
         "DSAS"
       ]
     },
@@ -114,11 +112,11 @@
       "heading": "Drone & Photogrammetry",
       "sub": "UAV Surveying",
       "chips": [
-        "Survey-Grade UAV",
+        "Survey-Grade UAV piloting",
         "Pix4D",
         "Agisoft Metashape",
-        "ArcGIS Drone2Map",
-        "Orthomosaic"
+        "Reality Scan",
+        "Reality Capture"
       ]
     },
     {
