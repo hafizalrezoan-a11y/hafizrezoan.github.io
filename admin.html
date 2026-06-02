@@ -26,102 +26,33 @@
   --warn: #b86a00;
   --warn-soft: #fff4e0;
 }
-
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{ height: 100%; }
-body{
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: var(--bg);
-  color: var(--ink);
-  font-size: 14px;
-  line-height: 1.55;
-}
-
+body{ font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg); color: var(--ink); font-size: 14px; line-height: 1.55; }
 button{ font-family: inherit; cursor: pointer; }
 input,textarea,select{ font-family: inherit; }
 
-/* LOGIN VIEW */
-.login-wrap{
-  min-height: 100vh; display: flex;
-  align-items: center; justify-content: center;
-  padding: 24px;
-}
-.login-card{
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-radius: 12px;
-  padding: 40px;
-  max-width: 440px; width: 100%;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-}
-.login-card h1{
-  font-size: 1.5rem; font-weight: 600;
-  margin-bottom: 8px;
-}
-.login-card .lead{
-  color: var(--ink-soft); margin-bottom: 24px; font-size: 0.9375rem;
-}
-.login-card label{
-  display: block; font-size: 0.8125rem;
-  font-weight: 600; margin-bottom: 6px;
-}
-.login-card input{
-  width: 100%; padding: 10px 12px;
-  border: 1px solid var(--rule-strong);
-  border-radius: 6px; background: var(--bg);
-  font-size: 0.875rem; font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-}
+.login-wrap{ min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px; }
+.login-card{ background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 40px; max-width: 440px; width: 100%; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+.login-card h1{ font-size: 1.5rem; font-weight: 600; margin-bottom: 8px; }
+.login-card .lead{ color: var(--ink-soft); margin-bottom: 24px; font-size: 0.9375rem; }
+.login-card label{ display: block; font-size: 0.8125rem; font-weight: 600; margin-bottom: 6px; }
+.login-card input{ width: 100%; padding: 10px 12px; border: 1px solid var(--rule-strong); border-radius: 6px; background: var(--bg); font-size: 0.875rem; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
 .login-card input:focus{ outline: none; border-color: var(--accent); background: white; }
-.login-card .hint{
-  font-size: 0.8125rem; color: var(--ink-mute);
-  margin-top: 6px; line-height: 1.5;
-}
+.login-card .hint{ font-size: 0.8125rem; color: var(--ink-mute); margin-top: 6px; line-height: 1.5; }
 .login-card .hint a{ color: var(--accent); font-weight: 500; }
 .login-actions{ margin-top: 20px; display: flex; gap: 8px; justify-content: flex-end; }
 
-/* APP LAYOUT */
 .app{ display: none; }
 .app.active{ display: block; }
-
-.topbar{
-  position: sticky; top: 0; z-index: 50;
-  background: var(--surface);
-  border-bottom: 1px solid var(--rule);
-  padding: 12px 24px;
-  display: flex; align-items: center; gap: 12px;
-}
-.topbar-title{
-  font-weight: 600; font-size: 0.9375rem;
-  margin-right: auto;
-}
-.topbar-title .badge{
-  display: inline-block;
-  background: var(--accent-soft); color: var(--accent-deep);
-  font-size: 0.6875rem; font-weight: 600;
-  padding: 2px 8px; border-radius: 4px;
-  margin-left: 8px; vertical-align: middle;
-  letter-spacing: 0.04em;
-}
-.dirty-indicator{
-  font-size: 0.8125rem; color: var(--warn);
-  display: none;
-}
+.topbar{ position: sticky; top: 0; z-index: 50; background: var(--surface); border-bottom: 1px solid var(--rule); padding: 12px 24px; display: flex; align-items: center; gap: 12px; }
+.topbar-title{ font-weight: 600; font-size: 0.9375rem; margin-right: auto; }
+.topbar-title .badge{ display: inline-block; background: var(--accent-soft); color: var(--accent-deep); font-size: 0.6875rem; font-weight: 600; padding: 2px 8px; border-radius: 4px; margin-left: 8px; vertical-align: middle; letter-spacing: 0.04em; }
+.dirty-indicator{ font-size: 0.8125rem; color: var(--warn); display: none; }
 .dirty-indicator.show{ display: inline; }
+.main{ max-width: 960px; margin: 0 auto; padding: 24px; }
 
-.main{
-  max-width: 960px; margin: 0 auto;
-  padding: 24px;
-}
-
-/* BUTTONS */
-.btn{
-  font-size: 0.8125rem; font-weight: 500;
-  padding: 8px 16px; border-radius: 6px;
-  border: 1px solid transparent;
-  transition: all 0.15s; display: inline-flex;
-  align-items: center; gap: 6px;
-  text-decoration: none;
-}
+.btn{ font-size: 0.8125rem; font-weight: 500; padding: 8px 16px; border-radius: 6px; border: 1px solid transparent; transition: all 0.15s; display: inline-flex; align-items: center; gap: 6px; text-decoration: none; }
 .btn:disabled{ opacity: 0.5; cursor: not-allowed; }
 .btn-primary{ background: var(--ink); color: white; border-color: var(--ink); }
 .btn-primary:hover:not(:disabled){ background: var(--accent); border-color: var(--accent); }
@@ -133,224 +64,74 @@ input,textarea,select{ font-family: inherit; }
 .btn-ghost:hover:not(:disabled){ color: var(--ink); background: var(--bg-alt); }
 .btn-sm{ font-size: 0.75rem; padding: 6px 12px; }
 
-/* SECTIONS (collapsible) */
-.section{
-  background: var(--surface);
-  border: 1px solid var(--rule);
-  border-radius: 8px;
-  margin-bottom: 16px;
-  overflow: hidden;
-}
-.section-header{
-  padding: 16px 20px;
-  display: flex; align-items: center; gap: 10px;
-  cursor: pointer;
-  user-select: none;
-  border-bottom: 1px solid transparent;
-}
+.section{ background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; margin-bottom: 16px; overflow: hidden; }
+.section-header{ padding: 16px 20px; display: flex; align-items: center; gap: 10px; cursor: pointer; user-select: none; border-bottom: 1px solid transparent; }
 .section.open .section-header{ border-bottom-color: var(--rule); }
 .section-header:hover{ background: var(--bg-alt); }
-.section-header h2{
-  font-size: 0.9375rem; font-weight: 600;
-  flex: 1;
-}
-.section-header .count-pill{
-  font-size: 0.6875rem; font-weight: 600;
-  color: var(--ink-mute); background: var(--bg-alt);
-  padding: 2px 8px; border-radius: 100px;
-}
-.section-header .chevron{
-  width: 16px; height: 16px;
-  transition: transform 0.2s;
-  color: var(--ink-mute);
-}
+.section-header h2{ font-size: 0.9375rem; font-weight: 600; flex: 1; }
+.section-header .count-pill{ font-size: 0.6875rem; font-weight: 600; color: var(--ink-mute); background: var(--bg-alt); padding: 2px 8px; border-radius: 100px; }
+.section-header .chevron{ width: 16px; height: 16px; transition: transform 0.2s; color: var(--ink-mute); }
 .section.open .chevron{ transform: rotate(90deg); }
-.section-body{
-  display: none;
-  padding: 20px;
-}
+.section-body{ display: none; padding: 20px; }
 .section.open .section-body{ display: block; }
 
-/* FORMS */
 .field{ margin-bottom: 16px; }
 .field-row{ display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .field-row-3{ display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
-@media (max-width: 640px){
-  .field-row, .field-row-3{ grid-template-columns: 1fr; }
-}
-.label{
-  display: block; font-size: 0.8125rem;
-  font-weight: 600; margin-bottom: 6px;
-}
-.label .meta{
-  font-weight: 400; color: var(--ink-mute);
-  font-size: 0.75rem; margin-left: 6px;
-}
-.input,.textarea,.select{
-  width: 100%; padding: 9px 12px;
-  border: 1px solid var(--rule-strong);
-  border-radius: 6px;
-  background: var(--bg);
-  font-size: 0.875rem;
-  font-family: inherit; line-height: 1.45;
-  transition: border-color 0.15s;
-}
-.input:focus,.textarea:focus,.select:focus{
-  outline: none; border-color: var(--accent); background: white;
-}
+@media (max-width: 640px){ .field-row, .field-row-3{ grid-template-columns: 1fr; } }
+.label{ display: block; font-size: 0.8125rem; font-weight: 600; margin-bottom: 6px; }
+.label .meta{ font-weight: 400; color: var(--ink-mute); font-size: 0.75rem; margin-left: 6px; }
+.input,.textarea,.select{ width: 100%; padding: 9px 12px; border: 1px solid var(--rule-strong); border-radius: 6px; background: var(--bg); font-size: 0.875rem; font-family: inherit; line-height: 1.45; transition: border-color 0.15s; }
+.input:focus,.textarea:focus,.select:focus{ outline: none; border-color: var(--accent); background: white; }
 .textarea{ min-height: 80px; resize: vertical; }
 .textarea-tall{ min-height: 120px; }
-.field-hint{
-  font-size: 0.75rem; color: var(--ink-mute);
-  margin-top: 4px;
-}
+.field-hint{ font-size: 0.75rem; color: var(--ink-mute); margin-top: 4px; }
 
-/* REPEATABLES */
 .item-list{ }
-.item-card{
-  background: var(--bg);
-  border: 1px solid var(--rule);
-  border-radius: 8px;
-  padding: 16px;
-  margin-bottom: 10px;
-  position: relative;
-}
-.item-card .item-controls{
-  position: absolute; top: 12px; right: 12px;
-  display: flex; gap: 4px;
-}
+.item-card{ background: var(--bg); border: 1px solid var(--rule); border-radius: 8px; padding: 16px; margin-bottom: 10px; position: relative; }
+.item-card .item-controls{ position: absolute; top: 12px; right: 12px; display: flex; gap: 4px; }
 .item-card .item-body{ padding-right: 100px; }
-.item-card .item-title{
-  font-size: 0.875rem; font-weight: 600;
-  margin-bottom: 10px;
-  color: var(--ink-soft);
-}
+.item-card .item-title{ font-size: 0.875rem; font-weight: 600; margin-bottom: 10px; color: var(--ink-soft); }
 .add-btn-wrap{ margin-top: 12px; }
 
-/* CHIPS */
-.chip-list{
-  display: flex; flex-wrap: wrap; gap: 6px;
-  padding: 8px;
-  background: var(--bg); border: 1px solid var(--rule-strong);
-  border-radius: 6px;
-  min-height: 42px;
-}
-.chip{
-  background: var(--accent-soft); color: var(--accent-deep);
-  font-size: 0.75rem; padding: 4px 8px; border-radius: 4px;
-  display: inline-flex; align-items: center; gap: 4px;
-}
-.chip .remove{
-  cursor: pointer; opacity: 0.6;
-  margin-left: 2px; font-size: 0.875rem; line-height: 1;
-}
-.chip .remove:hover{ opacity: 1; }
-.chip-input{
-  background: transparent; border: none; outline: none;
-  font-size: 0.8125rem; padding: 4px 0; min-width: 100px;
-  flex: 1;
-}
-
-/* AVATAR PREVIEW */
-.avatar-row{
-  display: flex; gap: 16px; align-items: center;
-}
-.avatar-preview{
-  width: 72px; height: 72px; border-radius: 50%;
-  background: var(--accent-soft);
-  border: 1px solid var(--rule);
-  display: flex; align-items: center; justify-content: center;
-  overflow: hidden; flex-shrink: 0;
-}
+.avatar-row{ display: flex; gap: 16px; align-items: center; }
+.avatar-preview{ width: 72px; height: 72px; border-radius: 50%; background: var(--accent-soft); border: 1px solid var(--rule); display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; }
 .avatar-preview img{ width: 100%; height: 100%; object-fit: cover; }
-.avatar-preview span{
-  font-family: serif; font-size: 1.5rem;
-  font-weight: 500; color: var(--accent);
-}
+.avatar-preview span{ font-family: serif; font-size: 1.5rem; font-weight: 500; color: var(--accent); }
 
-/* TOAST */
-.toast{
-  position: fixed; bottom: 20px; left: 50%;
-  transform: translateX(-50%) translateY(100px);
-  background: var(--ink); color: white;
-  padding: 12px 20px; border-radius: 8px;
-  font-size: 0.875rem;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-  opacity: 0; transition: all 0.25s;
-  z-index: 200; max-width: 90vw;
-}
+.image-preview{ width: 96px; height: 96px; border-radius: 8px; background: var(--accent-soft); border: 1px solid var(--rule); overflow: hidden; flex-shrink: 0; display: flex; align-items: center; justify-content: center; }
+.image-preview img{ width: 100%; height: 100%; object-fit: cover; }
+.image-preview span{ font-family: serif; font-size: 1.2rem; color: var(--accent); }
+.image-row{ display: flex; gap: 12px; align-items: center; margin-bottom: 8px; }
+
+.toast{ position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%) translateY(100px); background: var(--ink); color: white; padding: 12px 20px; border-radius: 8px; font-size: 0.875rem; box-shadow: 0 8px 24px rgba(0,0,0,0.2); opacity: 0; transition: all 0.25s; z-index: 200; max-width: 90vw; }
 .toast.show{ opacity: 1; transform: translateX(-50%) translateY(0); }
 .toast.error{ background: var(--danger); }
 .toast.success{ background: var(--accent); }
 
-/* MODAL */
-.modal-backdrop{
-  position: fixed; inset: 0;
-  background: rgba(0,0,0,0.4);
-  display: none; align-items: center; justify-content: center;
-  z-index: 150; padding: 24px;
-  backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
-}
+.modal-backdrop{ position: fixed; inset: 0; background: rgba(0,0,0,0.4); display: none; align-items: center; justify-content: center; z-index: 150; padding: 24px; backdrop-filter: blur(4px); }
 .modal-backdrop.open{ display: flex; }
-.modal{
-  background: var(--surface);
-  border-radius: 12px;
-  padding: 24px;
-  max-width: 500px; width: 100%;
-  max-height: 90vh; overflow-y: auto;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
-}
-.modal h3{
-  font-size: 1.0625rem; margin-bottom: 12px;
-}
-.modal .modal-desc{
-  color: var(--ink-soft); font-size: 0.875rem;
-  margin-bottom: 16px;
-}
-.modal-actions{
-  display: flex; gap: 8px; justify-content: flex-end;
-  margin-top: 16px;
-}
+.modal{ background: var(--surface); border-radius: 12px; padding: 24px; max-width: 500px; width: 100%; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,0.25); }
+.modal h3{ font-size: 1.0625rem; margin-bottom: 12px; }
+.modal .modal-desc{ color: var(--ink-soft); font-size: 0.875rem; margin-bottom: 16px; }
+.modal-actions{ display: flex; gap: 8px; justify-content: flex-end; margin-top: 16px; }
 
-/* INLINE ALERT */
-.alert{
-  padding: 10px 14px;
-  border-radius: 6px;
-  font-size: 0.8125rem;
-  margin: 10px 0;
-}
+.alert{ padding: 10px 14px; border-radius: 6px; font-size: 0.8125rem; margin: 10px 0; }
 .alert.warn{ background: var(--warn-soft); color: var(--warn); border: 1px solid #f0d8a0; }
 .alert.error{ background: var(--danger-soft); color: var(--danger); border: 1px solid #f5c6c2; }
 .alert.info{ background: var(--accent-soft); color: var(--accent-deep); border: 1px solid #b8d4c1; }
-.alert .dismiss{
-  float: right; cursor: pointer; opacity: 0.6;
-}
 
-/* LOADING SCREEN */
-.loading{
-  min-height: 100vh; display: flex;
-  align-items: center; justify-content: center;
-  color: var(--ink-mute);
-  font-size: 0.875rem;
-}
-.spinner{
-  display: inline-block; width: 14px; height: 14px;
-  border: 2px solid var(--rule-strong);
-  border-top-color: var(--accent);
-  border-radius: 50%; animation: spin 0.7s linear infinite;
-  margin-right: 8px; vertical-align: middle;
-}
+.loading{ min-height: 100vh; display: flex; align-items: center; justify-content: center; color: var(--ink-mute); font-size: 0.875rem; }
+.spinner{ display: inline-block; width: 14px; height: 14px; border: 2px solid var(--rule-strong); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.7s linear infinite; margin-right: 8px; vertical-align: middle; }
 @keyframes spin{ to{ transform: rotate(360deg); } }
 </style>
 </head>
 <body>
 
-<!-- LOGIN VIEW -->
 <div class="login-wrap" id="login-view">
   <div class="login-card">
     <h1>Portfolio admin</h1>
     <p class="lead">Sign in with a GitHub Personal Access Token to edit your portfolio content.</p>
-
     <div class="field">
       <label for="pat-input">GitHub Personal Access Token</label>
       <input type="password" id="pat-input" class="input" placeholder="github_pat_..." autocomplete="off"/>
@@ -360,16 +141,13 @@ input,textarea,select{ font-family: inherit; }
         Settings: <em>repo access</em> = "Only select repositories" → pick <code>hafizrezoan.github.io</code>; <em>Permissions → Contents</em> = "Read and write".
       </div>
     </div>
-
     <div id="login-alert"></div>
-
     <div class="login-actions">
       <button class="btn btn-primary" id="login-btn">Sign in</button>
     </div>
   </div>
 </div>
 
-<!-- APP VIEW -->
 <div class="app" id="app-view">
   <div class="topbar">
     <div class="topbar-title">Portfolio admin <span class="badge">EDIT MODE</span></div>
@@ -378,13 +156,11 @@ input,textarea,select{ font-family: inherit; }
     <button class="btn btn-secondary btn-sm" id="logout-btn">Sign out</button>
     <button class="btn btn-primary btn-sm" id="save-btn">Save changes</button>
   </div>
-
   <div class="main" id="main-content">
     <div class="loading"><span class="spinner"></span>Loading content from GitHub…</div>
   </div>
 </div>
 
-<!-- MODAL -->
 <div class="modal-backdrop" id="modal">
   <div class="modal">
     <h3 id="modal-title">Modal</h3>
@@ -398,13 +174,6 @@ input,textarea,select{ font-family: inherit; }
 <div class="toast" id="toast"></div>
 
 <script>
-/* =========================================================
-   PORTFOLIO ADMIN
-   - PAT-based GitHub API auth
-   - Loads/saves data.json
-   - Image upload for avatar
-   ========================================================= */
-
 const OWNER = 'hafizalrezoan-a11y';
 const REPO = 'hafizrezoan.github.io';
 const BRANCH = 'main';
@@ -416,7 +185,7 @@ let state = {
   data: null,
   dataSha: null,
   dirty: false,
-  pendingImageUploads: []  // { path, base64, message }
+  pendingImageUploads: []  // { path, base64, message, previewDataUrl }
 };
 
 /* ---------- HELPERS ---------- */
@@ -474,10 +243,7 @@ async function ghRequest(path, options = {}){
   const resp = await fetch(url, { ...options, headers });
   if(!resp.ok){
     let msg = `GitHub API ${resp.status}`;
-    try{
-      const j = await resp.json();
-      if(j.message) msg += `: ${j.message}`;
-    }catch(_){}
+    try{ const j = await resp.json(); if(j.message) msg += `: ${j.message}`; }catch(_){}
     throw new Error(msg);
   }
   if(resp.status === 204) return null;
@@ -487,8 +253,6 @@ async function ghRequest(path, options = {}){
 async function ghGetFile(path){
   const url = `/repos/${OWNER}/${REPO}/contents/${encodeURIComponent(path)}?ref=${BRANCH}`;
   const resp = await ghRequest(url);
-  // content is base64 of file bytes
-  // Decode UTF-8 properly
   const b64 = resp.content.replace(/\n/g, '');
   const bin = atob(b64);
   const bytes = new Uint8Array(bin.length);
@@ -526,11 +290,10 @@ async function ghGetFileSha(path){
 async function tryLogin(pat){
   state.pat = pat;
   try{
-    const user = await ghRequest('/user');
-    // Verify access to the repo
+    await ghRequest('/user');
     await ghRequest(`/repos/${OWNER}/${REPO}`);
     localStorage.setItem(PAT_STORAGE_KEY, pat);
-    return { ok: true, user };
+    return { ok: true };
   }catch(err){
     state.pat = null;
     return { ok: false, error: err.message };
@@ -540,9 +303,8 @@ async function tryLogin(pat){
 function logout(){
   if(state.dirty && !confirm('You have unsaved changes. Sign out anyway?')) return;
   localStorage.removeItem(PAT_STORAGE_KEY);
-  state.pat = null;
-  state.data = null;
-  state.dataSha = null;
+  state.pat = null; state.data = null; state.dataSha = null;
+  state.pendingImageUploads = [];
   clearDirty();
   document.getElementById('app-view').classList.remove('active');
   document.getElementById('login-view').style.display = 'flex';
@@ -553,25 +315,18 @@ document.getElementById('login-btn').addEventListener('click', async () => {
   const pat = document.getElementById('pat-input').value.trim();
   const alertEl = document.getElementById('login-alert');
   alertEl.innerHTML = '';
-  if(!pat){
-    alertEl.innerHTML = '<div class="alert error">Please paste your GitHub token.</div>';
-    return;
-  }
+  if(!pat){ alertEl.innerHTML = '<div class="alert error">Please paste your GitHub token.</div>'; return; }
   const btn = document.getElementById('login-btn');
   btn.disabled = true; btn.textContent = 'Signing in…';
   const result = await tryLogin(pat);
   btn.disabled = false; btn.textContent = 'Sign in';
-  if(result.ok){
-    enterApp();
-  }else{
-    alertEl.innerHTML = `<div class="alert error">Sign-in failed: ${escapeHtml(result.error)}<br><small>Check the token has access to <code>${OWNER}/${REPO}</code> with Contents read/write.</small></div>`;
-  }
+  if(result.ok){ enterApp(); }
+  else{ alertEl.innerHTML = `<div class="alert error">Sign-in failed: ${escapeHtml(result.error)}</div>`; }
 });
 
 document.getElementById('pat-input').addEventListener('keydown', (e) => {
   if(e.key === 'Enter') document.getElementById('login-btn').click();
 });
-
 document.getElementById('logout-btn').addEventListener('click', logout);
 
 /* ---------- APP ENTRY ---------- */
@@ -579,17 +334,42 @@ document.getElementById('logout-btn').addEventListener('click', logout);
 async function enterApp(){
   document.getElementById('login-view').style.display = 'none';
   document.getElementById('app-view').classList.add('active');
-
   try{
     const file = await ghGetFile(DATA_PATH);
     state.data = JSON.parse(file.text);
     state.dataSha = file.sha;
+    migrateSchema(state.data);
     renderApp();
   }catch(err){
-    document.getElementById('main-content').innerHTML = `
-      <div class="alert error">Could not load data.json: ${escapeHtml(err.message)}</div>
-    `;
+    document.getElementById('main-content').innerHTML = `<div class="alert error">Could not load data.json: ${escapeHtml(err.message)}</div>`;
   }
+}
+
+/* Ensure new schema fields exist on older data.json files */
+function migrateSchema(d){
+  d.hero = d.hero || {};
+  d.hero.statusText = d.hero.statusText || 'Available for research collaboration';
+  d.hero.locationText = d.hero.locationText || 'Dhaka, Bangladesh · 23.7°N';
+  d.hero.headlineLines = d.hero.headlineLines || ['GIS Analyst', '&amp; <em>Remote</em>', '<span class="underline">Sensing</span>', '<em>Researcher.</em>'];
+  d.hero.portraitName = d.hero.portraitName || (d.profile && d.profile.name) || '';
+  d.hero.portraitTitle = d.hero.portraitTitle || 'GIS Analyst · Geospatial Researcher';
+  d.hero.portraitTag = d.hero.portraitTag || 'Open to collaboration';
+  d.hero.ctaPrimaryHref = d.hero.ctaPrimaryHref || '#contact';
+  d.hero.ctaSecondaryHref = d.hero.ctaSecondaryHref || '#research';
+  d.marquee = d.marquee || [];
+  d.projects = d.projects || [];
+  d.featured = d.featured || { label: '', headline: '', summary: '', ctaLabel: '', ctaHref: '', stats: [] };
+  d.featured.stats = d.featured.stats || [];
+  d.education = (d.education || []).map(e => ({
+    id: e.id || uid('ed'),
+    date: e.date || e.dates || '',
+    school: e.school || e.institution || '',
+    degree: e.degree || '',
+    desc: e.desc || '',
+    grade: e.grade || '',
+    gradeMax: e.gradeMax || '/4'
+  }));
+  d.experience = (d.experience || []).map(e => ({ ...e, imageUrl: e.imageUrl || '' }));
 }
 
 /* ---------- RENDER MAIN ---------- */
@@ -599,12 +379,14 @@ function renderApp(){
   document.getElementById('main-content').innerHTML = `
     ${section('profile', 'Profile & avatar', renderProfileForm(d))}
     ${section('hero', 'Hero section', renderHeroForm(d))}
+    ${section('marquee', 'Marquee (scrolling banner)', renderMarqueeForm(d), d.marquee.length)}
     ${section('about', 'About', renderAboutForm(d))}
-    ${section('experience', 'Experience', renderExperienceForm(d), d.experience.length)}
-    ${section('skills', 'Skills', renderSkillsForm(d), d.skills.length)}
-    ${section('publications', 'Publications', renderPublicationsForm(d), d.publications.length)}
     ${section('education', 'Education', renderEducationForm(d), d.education.length)}
-    ${section('research', 'Student research', renderResearchForm(d), d.research.length)}
+    ${section('featured', 'Featured publication (spotlight)', renderFeaturedForm(d))}
+    ${section('publications', 'Publications', renderPublicationsForm(d), d.publications.length)}
+    ${section('projects', 'Projects', renderProjectsForm(d), d.projects.length)}
+    ${section('skills', 'Skills', renderSkillsForm(d), d.skills.length)}
+    ${section('experience', 'Experience', renderExperienceForm(d), d.experience.length)}
     ${section('courses', 'Courses & certifications', renderCoursesForm(d), d.courses.length)}
     ${section('scholar', 'Scholar note', renderScholarForm(d))}
     ${section('contact', 'Contact', renderContactForm(d))}
@@ -631,9 +413,15 @@ function wireSectionToggles(){
   document.querySelectorAll('.section-header').forEach(h => {
     h.addEventListener('click', () => h.parentElement.classList.toggle('open'));
   });
-  // Open profile by default
-  const first = document.querySelector('.section[data-section="profile"]');
-  if(first) first.classList.add('open');
+  document.querySelector('.section[data-section="profile"]')?.classList.add('open');
+}
+
+function reopenSection(btn){
+  const sectionEl = btn.closest('.section');
+  if(sectionEl){
+    const id = sectionEl.getAttribute('data-section');
+    document.querySelector(`.section[data-section="${id}"]`)?.classList.add('open');
+  }
 }
 
 /* ---------- PROFILE ---------- */
@@ -649,28 +437,16 @@ function renderProfileForm(d){
         <input type="file" id="avatar-file" accept="image/*" style="display:none"/>
         <button class="btn btn-secondary btn-sm" id="avatar-upload-btn">Upload new photo</button>
         ${d.profile.avatarUrl ? `<button class="btn btn-ghost btn-sm" id="avatar-clear-btn">Use initials instead</button>` : ''}
-        <div class="field-hint">JPEG or PNG. Will be resized to max 600×600 to keep the repo small.</div>
+        <div class="field-hint">JPEG or PNG. Will be resized to max 600×600.</div>
       </div>
     </div>
     <div class="field-row" style="margin-top: 20px;">
-      <div class="field">
-        <label class="label">Full name</label>
-        <input class="input" data-bind="profile.name" value="${escapeHtml(d.profile.name)}"/>
-      </div>
-      <div class="field">
-        <label class="label">Initials <span class="meta">2 letters</span></label>
-        <input class="input" data-bind="profile.initials" maxlength="3" value="${escapeHtml(d.profile.initials)}"/>
-      </div>
+      <div class="field"><label class="label">Full name</label><input class="input" data-bind="profile.name" value="${escapeHtml(d.profile.name)}"/></div>
+      <div class="field"><label class="label">Initials <span class="meta">2 letters, also used as nav logo</span></label><input class="input" data-bind="profile.initials" maxlength="3" value="${escapeHtml(d.profile.initials)}"/></div>
     </div>
     <div class="field-row">
-      <div class="field">
-        <label class="label">Short title <span class="meta">shown next to name</span></label>
-        <input class="input" data-bind="profile.shortTitle" value="${escapeHtml(d.profile.shortTitle)}"/>
-      </div>
-      <div class="field">
-        <label class="label">Location</label>
-        <input class="input" data-bind="profile.location" value="${escapeHtml(d.profile.location)}"/>
-      </div>
+      <div class="field"><label class="label">Short title</label><input class="input" data-bind="profile.shortTitle" value="${escapeHtml(d.profile.shortTitle)}"/></div>
+      <div class="field"><label class="label">Location</label><input class="input" data-bind="profile.location" value="${escapeHtml(d.profile.location)}"/></div>
     </div>
   `;
 }
@@ -678,43 +454,54 @@ function renderProfileForm(d){
 /* ---------- HERO ---------- */
 
 function renderHeroForm(d){
-  const rows = d.hero.cardRows.slice(0, 4);
-  while(rows.length < 4) rows.push({ label: '', value: '' });
+  const lines = d.hero.headlineLines || ['', '', '', ''];
+  while(lines.length < 4) lines.push('');
   return `
-    <div class="field">
-      <label class="label">Eyebrow <span class="meta">small uppercase label above headline</span></label>
-      <input class="input" data-bind="hero.eyebrow" value="${escapeHtml(d.hero.eyebrow)}"/>
+    <div class="field-row">
+      <div class="field">
+        <label class="label">Status pill text <span class="meta">next to green dot</span></label>
+        <input class="input" data-bind="hero.statusText" value="${escapeHtml(d.hero.statusText)}"/>
+      </div>
+      <div class="field">
+        <label class="label">Location text <span class="meta">top right of hero</span></label>
+        <input class="input" data-bind="hero.locationText" value="${escapeHtml(d.hero.locationText)}"/>
+      </div>
     </div>
     <div class="field">
-      <label class="label">Headline <span class="meta">HTML allowed: &lt;em&gt; for italic accent</span></label>
-      <textarea class="textarea" data-bind="hero.headline">${escapeHtml(d.hero.headline)}</textarea>
+      <label class="label">Huge headline (4 lines) <span class="meta">HTML allowed: &lt;em&gt; (italic green accent), &lt;span class="underline"&gt; (ochre underline)</span></label>
+      ${lines.map((line, i) => `
+        <input class="input" data-bind="hero.headlineLines.${i}" placeholder="Line ${i+1}" value="${escapeHtml(line)}" style="margin-bottom: 6px; font-family: ui-monospace, monospace;"/>
+      `).join('')}
+      <div class="field-hint">Example default: <code>GIS Analyst</code> / <code>&amp; &lt;em&gt;Remote&lt;/em&gt;</code> / <code>&lt;span class="underline"&gt;Sensing&lt;/span&gt;</code> / <code>&lt;em&gt;Researcher.&lt;/em&gt;</code></div>
+    </div>
+    <div class="field-row-3">
+      <div class="field"><label class="label">Portrait name</label><input class="input" data-bind="hero.portraitName" value="${escapeHtml(d.hero.portraitName)}"/></div>
+      <div class="field"><label class="label">Portrait subtitle</label><input class="input" data-bind="hero.portraitTitle" value="${escapeHtml(d.hero.portraitTitle)}"/></div>
+      <div class="field"><label class="label">Tag pill</label><input class="input" data-bind="hero.portraitTag" value="${escapeHtml(d.hero.portraitTag)}"/></div>
     </div>
     <div class="field">
-      <label class="label">Lead paragraph</label>
+      <label class="label">Lead paragraph <span class="meta">HTML allowed: &lt;strong&gt;</span></label>
       <textarea class="textarea" data-bind="hero.lead">${escapeHtml(d.hero.lead)}</textarea>
     </div>
     <div class="field-row">
-      <div class="field">
-        <label class="label">Primary button text</label>
-        <input class="input" data-bind="hero.ctaPrimaryLabel" value="${escapeHtml(d.hero.ctaPrimaryLabel)}"/>
-      </div>
-      <div class="field">
-        <label class="label">Secondary button text</label>
-        <input class="input" data-bind="hero.ctaSecondaryLabel" value="${escapeHtml(d.hero.ctaSecondaryLabel)}"/>
-      </div>
+      <div class="field"><label class="label">Primary button label</label><input class="input" data-bind="hero.ctaPrimaryLabel" value="${escapeHtml(d.hero.ctaPrimaryLabel)}"/></div>
+      <div class="field"><label class="label">Primary button link</label><input class="input" data-bind="hero.ctaPrimaryHref" value="${escapeHtml(d.hero.ctaPrimaryHref)}"/></div>
     </div>
-    <div class="field">
-      <label class="label">"At a glance" card heading</label>
-      <input class="input" data-bind="hero.cardHeading" value="${escapeHtml(d.hero.cardHeading)}"/>
+    <div class="field-row">
+      <div class="field"><label class="label">Secondary button label</label><input class="input" data-bind="hero.ctaSecondaryLabel" value="${escapeHtml(d.hero.ctaSecondaryLabel)}"/></div>
+      <div class="field"><label class="label">Secondary button link</label><input class="input" data-bind="hero.ctaSecondaryHref" value="${escapeHtml(d.hero.ctaSecondaryHref)}"/></div>
     </div>
+  `;
+}
+
+/* ---------- MARQUEE ---------- */
+
+function renderMarqueeForm(d){
+  return `
     <div class="field">
-      <label class="label">Card rows <span class="meta">first 4 are editable; Publications and Courses counts auto-update</span></label>
-      ${rows.map((r, i) => `
-        <div class="field-row" style="margin-bottom: 8px;">
-          <input class="input" data-bind="hero.cardRows.${i}.label" placeholder="Label" value="${escapeHtml(r.label)}"/>
-          <input class="input" data-bind="hero.cardRows.${i}.value" placeholder="Value" value="${escapeHtml(r.value)}"/>
-        </div>
-      `).join('')}
+      <label class="label">Scrolling banner items <span class="meta">one keyword per line — these scroll across the dark green band between hero and About</span></label>
+      <textarea class="textarea textarea-tall" data-bind-lines="marquee">${escapeHtml((d.marquee || []).join('\n'))}</textarea>
+      <div class="field-hint">Each item shows as italic text with a ✦ separator. Aim for 6–10 short phrases.</div>
     </div>
   `;
 }
@@ -731,10 +518,10 @@ function renderAboutForm(d){
       <textarea class="textarea" data-bind="about.title">${escapeHtml(d.about.title)}</textarea>
     </div>
     <div class="field">
-      <label class="label">Editable stats <span class="meta">Publication count and course count auto-render between these</span></label>
+      <label class="label">Editable stats <span class="meta">Publication and course counts are auto-injected between them</span></label>
       <div class="field-row-3" style="margin-bottom: 8px;">
         <input class="input" data-bind="about.stats.0.num" placeholder="Number" value="${escapeHtml(s0.num)}"/>
-        <input class="input" data-bind="about.stats.0.unit" placeholder="Unit (+, /4, etc.)" value="${escapeHtml(s0.unit)}"/>
+        <input class="input" data-bind="about.stats.0.unit" placeholder="Unit (+, /4, …)" value="${escapeHtml(s0.unit)}"/>
         <input class="input" data-bind="about.stats.0.label" placeholder="Label" value="${escapeHtml(s0.label)}"/>
       </div>
       <div class="field-row-3" style="margin-bottom: 8px;">
@@ -744,8 +531,8 @@ function renderAboutForm(d){
       </div>
     </div>
     <div class="field">
-      <label class="label">Paragraphs <span class="meta">one per box, HTML allowed (&lt;strong&gt;, &lt;em&gt;)</span></label>
-      <div id="about-paras">
+      <label class="label">Paragraphs <span class="meta">HTML allowed: &lt;strong&gt;, &lt;em&gt;</span></label>
+      <div>
         ${d.about.paragraphs.map((p, i) => `
           <div class="item-card">
             <textarea class="textarea textarea-tall" data-bind="about.paragraphs.${i}">${escapeHtml(p)}</textarea>
@@ -757,51 +544,161 @@ function renderAboutForm(d){
           </div>
         `).join('')}
       </div>
-      <div class="add-btn-wrap">
-        <button class="btn btn-secondary btn-sm" data-array-add="about.paragraphs" data-template="paragraph">+ Add paragraph</button>
-      </div>
+      <div class="add-btn-wrap"><button class="btn btn-secondary btn-sm" data-array-add="about.paragraphs" data-template="paragraph">+ Add paragraph</button></div>
     </div>
   `;
 }
 
-/* ---------- EXPERIENCE ---------- */
+/* ---------- EDUCATION ---------- */
 
-function renderExperienceForm(d){
+function renderEducationForm(d){
   return `
-    <div class="item-list" id="experience-list">
-      ${d.experience.map((e, i) => `
+    <div class="item-list">
+      ${d.education.map((e, i) => `
         <div class="item-card">
           <div class="item-controls">
-            <button class="btn btn-ghost btn-sm" data-array-move="experience" data-index="${i}" data-dir="-1">↑</button>
-            <button class="btn btn-ghost btn-sm" data-array-move="experience" data-index="${i}" data-dir="1">↓</button>
-            <button class="btn btn-danger btn-sm" data-array-remove="experience" data-index="${i}">×</button>
+            <button class="btn btn-ghost btn-sm" data-array-move="education" data-index="${i}" data-dir="-1">↑</button>
+            <button class="btn btn-ghost btn-sm" data-array-move="education" data-index="${i}" data-dir="1">↓</button>
+            <button class="btn btn-danger btn-sm" data-array-remove="education" data-index="${i}">×</button>
           </div>
           <div class="item-body">
-            <div class="item-title">${escapeHtml(e.role || 'New role')} · ${escapeHtml(e.org || '')}</div>
+            <div class="item-title">${escapeHtml(e.school || 'New entry')}</div>
             <div class="field-row">
-              <div class="field">
-                <label class="label">Date range</label>
-                <input class="input" data-bind="experience.${i}.date" value="${escapeHtml(e.date)}"/>
-              </div>
-              <div class="field">
-                <label class="label">Role</label>
-                <input class="input" data-bind="experience.${i}.role" value="${escapeHtml(e.role)}"/>
-              </div>
+              <div class="field"><label class="label">Date range</label><input class="input" data-bind="education.${i}.date" value="${escapeHtml(e.date)}"/></div>
+              <div class="field"><label class="label">School / institution</label><input class="input" data-bind="education.${i}.school" value="${escapeHtml(e.school)}"/></div>
             </div>
             <div class="field">
-              <label class="label">Organisation</label>
-              <input class="input" data-bind="experience.${i}.org" value="${escapeHtml(e.org)}"/>
+              <label class="label">Degree line <span class="meta">e.g. "MS in GIS · Dept. of Geography"</span></label>
+              <input class="input" data-bind="education.${i}.degree" value="${escapeHtml(e.degree)}"/>
             </div>
             <div class="field">
-              <label class="label">Tasks <span class="meta">one per line</span></label>
-              <textarea class="textarea" data-bind-lines="experience.${i}.tasks">${escapeHtml(e.tasks.join('\n'))}</textarea>
+              <label class="label">Description <span class="meta">1–2 sentences</span></label>
+              <textarea class="textarea" data-bind="education.${i}.desc">${escapeHtml(e.desc)}</textarea>
+            </div>
+            <div class="field-row">
+              <div class="field"><label class="label">Grade <span class="meta">numeric only, e.g. 3.94</span></label><input class="input" data-bind="education.${i}.grade" value="${escapeHtml(e.grade)}"/></div>
+              <div class="field"><label class="label">Grade scale</label><input class="input" data-bind="education.${i}.gradeMax" value="${escapeHtml(e.gradeMax)}"/></div>
             </div>
           </div>
         </div>
       `).join('')}
     </div>
-    <div class="add-btn-wrap">
-      <button class="btn btn-secondary btn-sm" data-array-add="experience" data-template="experience">+ Add experience</button>
+    <div class="add-btn-wrap"><button class="btn btn-secondary btn-sm" data-array-add="education" data-template="education">+ Add education</button></div>
+  `;
+}
+
+/* ---------- FEATURED PUBLICATION ---------- */
+
+function renderFeaturedForm(d){
+  const f = d.featured;
+  const stats = f.stats || [];
+  while(stats.length < 3) stats.push({ num: '', label: '' });
+  return `
+    <div class="alert info">The featured publication appears as a large spotlight card at the top of the Research section. Leave the headline empty to hide the spotlight entirely.</div>
+    <div class="field">
+      <label class="label">Tag label <span class="meta">small uppercase text above the title</span></label>
+      <input class="input" data-bind="featured.label" value="${escapeHtml(f.label)}"/>
+    </div>
+    <div class="field">
+      <label class="label">Headline <span class="meta">HTML allowed: &lt;em&gt; for italic accent</span></label>
+      <textarea class="textarea" data-bind="featured.headline">${escapeHtml(f.headline)}</textarea>
+    </div>
+    <div class="field">
+      <label class="label">Summary</label>
+      <textarea class="textarea" data-bind="featured.summary">${escapeHtml(f.summary)}</textarea>
+    </div>
+    <div class="field-row">
+      <div class="field"><label class="label">Button label</label><input class="input" data-bind="featured.ctaLabel" value="${escapeHtml(f.ctaLabel)}"/></div>
+      <div class="field"><label class="label">Button link (URL)</label><input class="input" data-bind="featured.ctaHref" value="${escapeHtml(f.ctaHref)}"/></div>
+    </div>
+    <div class="field">
+      <label class="label">Stats row <span class="meta">3 stat blocks at the bottom of the spotlight</span></label>
+      ${stats.slice(0, 3).map((s, i) => `
+        <div class="field-row" style="margin-bottom: 8px;">
+          <input class="input" data-bind="featured.stats.${i}.num" placeholder="Number" value="${escapeHtml(s.num)}"/>
+          <input class="input" data-bind="featured.stats.${i}.label" placeholder="Label" value="${escapeHtml(s.label)}"/>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+/* ---------- PUBLICATIONS ---------- */
+
+function renderPublicationsForm(d){
+  return `
+    <div class="alert info">Tip: paste a DOI and click <strong>Add by DOI</strong> to auto-fill from CrossRef.</div>
+    <div class="add-btn-wrap" style="margin-bottom: 16px; margin-top: 0;">
+      <button class="btn btn-primary btn-sm" id="pub-doi-fetch-btn">+ Add by DOI</button>
+      <button class="btn btn-secondary btn-sm" data-array-add="publications" data-template="publication">+ Add manually</button>
+    </div>
+    <div class="item-list">
+      ${d.publications.map((p, i) => `
+        <div class="item-card">
+          <div class="item-controls">
+            <button class="btn btn-danger btn-sm" data-array-remove="publications" data-index="${i}">×</button>
+          </div>
+          <div class="item-body">
+            <div class="item-title">${escapeHtml(p.year || '')} · ${escapeHtml((p.title || '').slice(0, 60))}</div>
+            <div class="field-row">
+              <div class="field"><label class="label">Year</label><input class="input" data-bind="publications.${i}.year" type="number" value="${escapeHtml(p.year)}"/></div>
+              <div class="field"><label class="label">DOI</label><input class="input" data-bind="publications.${i}.doi" value="${escapeHtml(p.doi || '')}"/></div>
+            </div>
+            <div class="field"><label class="label">Title</label><textarea class="textarea" data-bind="publications.${i}.title">${escapeHtml(p.title)}</textarea></div>
+            <div class="field">
+              <label class="label">Authors <span class="meta">HTML allowed; wrap your name in &lt;strong&gt;...&lt;/strong&gt;</span></label>
+              <textarea class="textarea" data-bind="publications.${i}.authorsHtml">${escapeHtml(p.authorsHtml || p.authors || '')}</textarea>
+            </div>
+            <div class="field"><label class="label">Journal</label><input class="input" data-bind="publications.${i}.journal" value="${escapeHtml(p.journal || '')}"/></div>
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+/* ---------- PROJECTS ---------- */
+
+function renderProjectsForm(d){
+  return `
+    <div class="alert info">Projects appear as a bento grid. First project gets the largest tile. Cover image is optional; without it, an initial letter is shown.</div>
+    <div class="add-btn-wrap" style="margin-bottom: 16px; margin-top: 0;">
+      <button class="btn btn-secondary btn-sm" data-array-add="projects" data-template="project">+ Add project</button>
+    </div>
+    <div class="item-list">
+      ${d.projects.map((p, i) => `
+        <div class="item-card">
+          <div class="item-controls">
+            <button class="btn btn-ghost btn-sm" data-array-move="projects" data-index="${i}" data-dir="-1">↑</button>
+            <button class="btn btn-ghost btn-sm" data-array-move="projects" data-index="${i}" data-dir="1">↓</button>
+            <button class="btn btn-danger btn-sm" data-array-remove="projects" data-index="${i}">×</button>
+          </div>
+          <div class="item-body">
+            <div class="item-title">${escapeHtml(p.name || 'New project')}</div>
+            <div class="image-row">
+              <div class="image-preview" data-image-preview="projects.${i}.image">
+                ${p.image
+                  ? `<img src="${escapeHtml(p.image)}" alt=""/>`
+                  : `<span>${escapeHtml((p.name || '?').charAt(0))}</span>`
+                }
+              </div>
+              <div>
+                <button class="btn btn-secondary btn-sm" data-image-upload="projects.${i}.image" data-prefix="project">Upload cover image</button>
+                ${p.image ? `<button class="btn btn-ghost btn-sm" data-image-clear="projects.${i}.image">Clear</button>` : ''}
+                <div class="field-hint">Resized to 1200px max.</div>
+              </div>
+            </div>
+            <div class="field"><label class="label">Project title</label><input class="input" data-bind="projects.${i}.name" value="${escapeHtml(p.name)}"/></div>
+            <div class="field-row">
+              <div class="field"><label class="label">Your role</label><input class="input" data-bind="projects.${i}.role" value="${escapeHtml(p.role)}"/></div>
+              <div class="field"><label class="label">Year</label><input class="input" data-bind="projects.${i}.year" value="${escapeHtml(p.year)}"/></div>
+            </div>
+            <div class="field"><label class="label">Description</label><textarea class="textarea" data-bind="projects.${i}.desc">${escapeHtml(p.desc)}</textarea></div>
+            <div class="field"><label class="label">Tools <span class="meta">comma-separated</span></label><input class="input" data-bind="projects.${i}.tools" value="${escapeHtml(p.tools)}"/></div>
+            <div class="field"><label class="label">Link <span class="meta">optional URL</span></label><input class="input" data-bind="projects.${i}.link" value="${escapeHtml(p.link || '')}"/></div>
+          </div>
+        </div>
+      `).join('')}
     </div>
   `;
 }
@@ -821,160 +718,59 @@ function renderSkillsForm(d){
           <div class="item-body">
             <div class="item-title">${escapeHtml(s.heading || 'New skill card')}</div>
             <div class="field-row">
-              <div class="field">
-                <label class="label">Heading</label>
-                <input class="input" data-bind="skills.${i}.heading" value="${escapeHtml(s.heading)}"/>
-              </div>
-              <div class="field">
-                <label class="label">Subtitle</label>
-                <input class="input" data-bind="skills.${i}.sub" value="${escapeHtml(s.sub)}"/>
-              </div>
+              <div class="field"><label class="label">Heading</label><input class="input" data-bind="skills.${i}.heading" value="${escapeHtml(s.heading)}"/></div>
+              <div class="field"><label class="label">Subtitle</label><input class="input" data-bind="skills.${i}.sub" value="${escapeHtml(s.sub)}"/></div>
             </div>
             <div class="field">
-              <label class="label">Chips <span class="meta">comma-separated or one per line</span></label>
+              <label class="label">Chips <span class="meta">comma-separated</span></label>
               <textarea class="textarea" data-bind-lines="skills.${i}.chips" data-sep="comma">${escapeHtml(s.chips.join(', '))}</textarea>
             </div>
           </div>
         </div>
       `).join('')}
     </div>
-    <div class="add-btn-wrap">
-      <button class="btn btn-secondary btn-sm" data-array-add="skills" data-template="skill">+ Add skill card</button>
-    </div>
+    <div class="add-btn-wrap"><button class="btn btn-secondary btn-sm" data-array-add="skills" data-template="skill">+ Add skill card</button></div>
   `;
 }
 
-/* ---------- PUBLICATIONS ---------- */
+/* ---------- EXPERIENCE ---------- */
 
-function renderPublicationsForm(d){
+function renderExperienceForm(d){
   return `
-    <div class="alert info">Tip: paste a DOI and click <strong>Fetch from DOI</strong> to auto-fill from CrossRef.</div>
-    <div class="add-btn-wrap" style="margin-bottom: 16px; margin-top: 0;">
-      <button class="btn btn-primary btn-sm" id="pub-doi-fetch-btn">+ Add by DOI</button>
-      <button class="btn btn-secondary btn-sm" data-array-add="publications" data-template="publication">+ Add manually</button>
-    </div>
-    <div class="item-list">
-      ${d.publications.map((p, i) => `
+    <div class="item-list" id="experience-list">
+      ${d.experience.map((e, i) => `
         <div class="item-card">
           <div class="item-controls">
-            <button class="btn btn-danger btn-sm" data-array-remove="publications" data-index="${i}">×</button>
+            <button class="btn btn-ghost btn-sm" data-array-move="experience" data-index="${i}" data-dir="-1">↑</button>
+            <button class="btn btn-ghost btn-sm" data-array-move="experience" data-index="${i}" data-dir="1">↓</button>
+            <button class="btn btn-danger btn-sm" data-array-remove="experience" data-index="${i}">×</button>
           </div>
           <div class="item-body">
-            <div class="item-title">${escapeHtml(p.year || '')} · ${escapeHtml((p.title || '').slice(0, 60))}</div>
+            <div class="item-title">${escapeHtml(e.role || 'New role')} · ${escapeHtml(e.org || '')}</div>
+            <div class="image-row">
+              <div class="image-preview" data-image-preview="experience.${i}.imageUrl">
+                ${e.imageUrl
+                  ? `<img src="${escapeHtml(e.imageUrl)}" alt=""/>`
+                  : `<span>${escapeHtml((e.org || '?').charAt(0))}</span>`
+                }
+              </div>
+              <div>
+                <button class="btn btn-secondary btn-sm" data-image-upload="experience.${i}.imageUrl" data-prefix="exp">Upload thumbnail</button>
+                ${e.imageUrl ? `<button class="btn btn-ghost btn-sm" data-image-clear="experience.${i}.imageUrl">Clear</button>` : ''}
+                <div class="field-hint">Square 600×600 works best.</div>
+              </div>
+            </div>
             <div class="field-row">
-              <div class="field">
-                <label class="label">Year</label>
-                <input class="input" data-bind="publications.${i}.year" type="number" value="${escapeHtml(p.year)}"/>
-              </div>
-              <div class="field">
-                <label class="label">DOI</label>
-                <input class="input" data-bind="publications.${i}.doi" value="${escapeHtml(p.doi || '')}"/>
-              </div>
+              <div class="field"><label class="label">Date range</label><input class="input" data-bind="experience.${i}.date" value="${escapeHtml(e.date)}"/></div>
+              <div class="field"><label class="label">Role</label><input class="input" data-bind="experience.${i}.role" value="${escapeHtml(e.role)}"/></div>
             </div>
-            <div class="field">
-              <label class="label">Title</label>
-              <textarea class="textarea" data-bind="publications.${i}.title">${escapeHtml(p.title)}</textarea>
-            </div>
-            <div class="field">
-              <label class="label">Authors <span class="meta">HTML allowed; wrap your name in &lt;strong&gt;...&lt;/strong&gt;</span></label>
-              <textarea class="textarea" data-bind="publications.${i}.authorsHtml">${escapeHtml(p.authorsHtml || p.authors || '')}</textarea>
-            </div>
-            <div class="field">
-              <label class="label">Journal</label>
-              <input class="input" data-bind="publications.${i}.journal" value="${escapeHtml(p.journal || '')}"/>
-            </div>
+            <div class="field"><label class="label">Organisation</label><input class="input" data-bind="experience.${i}.org" value="${escapeHtml(e.org)}"/></div>
+            <div class="field"><label class="label">Tasks <span class="meta">one per line</span></label><textarea class="textarea" data-bind-lines="experience.${i}.tasks">${escapeHtml(e.tasks.join('\n'))}</textarea></div>
           </div>
         </div>
       `).join('')}
     </div>
-  `;
-}
-
-/* ---------- EDUCATION ---------- */
-
-function renderEducationForm(d){
-  return `
-    <div class="item-list">
-      ${d.education.map((e, i) => `
-        <div class="item-card">
-          <div class="item-controls">
-            <button class="btn btn-ghost btn-sm" data-array-move="education" data-index="${i}" data-dir="-1">↑</button>
-            <button class="btn btn-ghost btn-sm" data-array-move="education" data-index="${i}" data-dir="1">↓</button>
-            <button class="btn btn-danger btn-sm" data-array-remove="education" data-index="${i}">×</button>
-          </div>
-          <div class="item-body">
-            <div class="item-title">${escapeHtml(e.degree || 'New entry')}</div>
-            <div class="field">
-              <label class="label">Degree</label>
-              <input class="input" data-bind="education.${i}.degree" value="${escapeHtml(e.degree)}"/>
-            </div>
-            <div class="field">
-              <label class="label">Institution</label>
-              <input class="input" data-bind="education.${i}.institution" value="${escapeHtml(e.institution)}"/>
-            </div>
-            <div class="field-row">
-              <div class="field">
-                <label class="label">Dates</label>
-                <input class="input" data-bind="education.${i}.dates" value="${escapeHtml(e.dates)}"/>
-              </div>
-              <div class="field">
-                <label class="label">Grade <span class="meta">optional</span></label>
-                <input class="input" data-bind="education.${i}.grade" value="${escapeHtml(e.grade || '')}"/>
-              </div>
-            </div>
-          </div>
-        </div>
-      `).join('')}
-    </div>
-    <div class="add-btn-wrap">
-      <button class="btn btn-secondary btn-sm" data-array-add="education" data-template="education">+ Add education</button>
-    </div>
-  `;
-}
-
-/* ---------- RESEARCH ---------- */
-
-function renderResearchForm(d){
-  return `
-    <div class="item-list">
-      ${d.research.map((r, i) => `
-        <div class="item-card">
-          <div class="item-controls">
-            <button class="btn btn-ghost btn-sm" data-array-move="research" data-index="${i}" data-dir="-1">↑</button>
-            <button class="btn btn-ghost btn-sm" data-array-move="research" data-index="${i}" data-dir="1">↓</button>
-            <button class="btn btn-danger btn-sm" data-array-remove="research" data-index="${i}">×</button>
-          </div>
-          <div class="item-body">
-            <div class="item-title">${escapeHtml(r.title || 'New research')}</div>
-            <div class="field">
-              <label class="label">Title</label>
-              <input class="input" data-bind="research.${i}.title" value="${escapeHtml(r.title)}"/>
-            </div>
-            <div class="field">
-              <label class="label">Institution / tools</label>
-              <input class="input" data-bind="research.${i}.institution" value="${escapeHtml(r.institution)}"/>
-            </div>
-            <div class="field">
-              <label class="label">Description</label>
-              <textarea class="textarea" data-bind="research.${i}.description">${escapeHtml(r.description)}</textarea>
-            </div>
-            <div class="field-row">
-              <div class="field">
-                <label class="label">Dates</label>
-                <input class="input" data-bind="research.${i}.dates" value="${escapeHtml(r.dates)}"/>
-              </div>
-              <div class="field">
-                <label class="label">Role</label>
-                <input class="input" data-bind="research.${i}.role" value="${escapeHtml(r.role)}"/>
-              </div>
-            </div>
-          </div>
-        </div>
-      `).join('')}
-    </div>
-    <div class="add-btn-wrap">
-      <button class="btn btn-secondary btn-sm" data-array-add="research" data-template="research">+ Add research</button>
-    </div>
+    <div class="add-btn-wrap"><button class="btn btn-secondary btn-sm" data-array-add="experience" data-template="experience">+ Add experience</button></div>
   `;
 }
 
@@ -982,7 +778,10 @@ function renderResearchForm(d){
 
 function renderCoursesForm(d){
   return `
-    <div class="alert info">${d.courses.length} courses. Use the filter chips on the public site to group them by category.</div>
+    <div class="alert info">${d.courses.length} courses. The public site groups them by category in filter chips.</div>
+    <div class="add-btn-wrap" style="margin-bottom: 16px; margin-top: 0;">
+      <button class="btn btn-secondary btn-sm" data-array-add="courses" data-template="course">+ Add course</button>
+    </div>
     <div class="item-list">
       ${d.courses.map((c, i) => `
         <div class="item-card">
@@ -991,100 +790,48 @@ function renderCoursesForm(d){
           </div>
           <div class="item-body">
             <div class="item-title">${escapeHtml(c.name || 'New course')}</div>
-            <div class="field">
-              <label class="label">Course name</label>
-              <input class="input" data-bind="courses.${i}.name" value="${escapeHtml(c.name)}"/>
-            </div>
+            <div class="field"><label class="label">Course name</label><input class="input" data-bind="courses.${i}.name" value="${escapeHtml(c.name)}"/></div>
             <div class="field-row-3">
-              <div class="field">
-                <label class="label">Provider</label>
-                <input class="input" data-bind="courses.${i}.org" value="${escapeHtml(c.org)}"/>
-              </div>
-              <div class="field">
-                <label class="label">Date</label>
-                <input class="input" data-bind="courses.${i}.date" value="${escapeHtml(c.date)}"/>
-              </div>
-              <div class="field">
-                <label class="label">Duration <span class="meta">optional</span></label>
-                <input class="input" data-bind="courses.${i}.duration" value="${escapeHtml(c.duration || '')}"/>
-              </div>
+              <div class="field"><label class="label">Provider</label><input class="input" data-bind="courses.${i}.org" value="${escapeHtml(c.org)}"/></div>
+              <div class="field"><label class="label">Date</label><input class="input" data-bind="courses.${i}.date" value="${escapeHtml(c.date)}"/></div>
+              <div class="field"><label class="label">Duration</label><input class="input" data-bind="courses.${i}.duration" value="${escapeHtml(c.duration || '')}"/></div>
             </div>
-            <div class="field">
-              <label class="label">Category <span class="meta">groups it in the filter chip</span></label>
-              <input class="input" data-bind="courses.${i}.category" value="${escapeHtml(c.category || c.org)}"/>
-            </div>
+            <div class="field"><label class="label">Category <span class="meta">groups it in the filter chip</span></label><input class="input" data-bind="courses.${i}.category" value="${escapeHtml(c.category || c.org)}"/></div>
           </div>
         </div>
       `).join('')}
     </div>
-    <div class="add-btn-wrap">
-      <button class="btn btn-secondary btn-sm" data-array-add="courses" data-template="course">+ Add course</button>
-    </div>
   `;
 }
 
-/* ---------- SCHOLAR NOTE ---------- */
+/* ---------- SCHOLAR / CONTACT / FOOTER ---------- */
 
 function renderScholarForm(d){
   const s = d.scholarNote || { label: '', mainHtml: '', subHtml: '' };
   return `
-    <div class="field">
-      <label class="label">Label</label>
-      <input class="input" data-bind="scholarNote.label" value="${escapeHtml(s.label)}"/>
-    </div>
-    <div class="field">
-      <label class="label">Main text <span class="meta">HTML allowed</span></label>
-      <textarea class="textarea" data-bind="scholarNote.mainHtml">${escapeHtml(s.mainHtml)}</textarea>
-    </div>
-    <div class="field">
-      <label class="label">Subtext <span class="meta">HTML allowed, optional</span></label>
-      <textarea class="textarea" data-bind="scholarNote.subHtml">${escapeHtml(s.subHtml || '')}</textarea>
-    </div>
+    <div class="field"><label class="label">Label</label><input class="input" data-bind="scholarNote.label" value="${escapeHtml(s.label)}"/></div>
+    <div class="field"><label class="label">Main text <span class="meta">HTML allowed</span></label><textarea class="textarea" data-bind="scholarNote.mainHtml">${escapeHtml(s.mainHtml)}</textarea></div>
+    <div class="field"><label class="label">Subtext <span class="meta">HTML allowed, optional</span></label><textarea class="textarea" data-bind="scholarNote.subHtml">${escapeHtml(s.subHtml || '')}</textarea></div>
   `;
 }
-
-/* ---------- CONTACT ---------- */
 
 function renderContactForm(d){
   return `
-    <div class="field">
-      <label class="label">Heading <span class="meta">HTML allowed</span></label>
-      <textarea class="textarea" data-bind="contact.heading">${escapeHtml(d.contact.heading)}</textarea>
-    </div>
+    <div class="field"><label class="label">Heading <span class="meta">HTML allowed</span></label><textarea class="textarea" data-bind="contact.heading">${escapeHtml(d.contact.heading)}</textarea></div>
     <div class="field-row">
-      <div class="field">
-        <label class="label">Email</label>
-        <input class="input" type="email" data-bind="contact.email" value="${escapeHtml(d.contact.email)}"/>
-      </div>
-      <div class="field">
-        <label class="label">Phone <span class="meta">display</span></label>
-        <input class="input" data-bind="contact.phone" value="${escapeHtml(d.contact.phone)}"/>
-      </div>
+      <div class="field"><label class="label">Email</label><input class="input" type="email" data-bind="contact.email" value="${escapeHtml(d.contact.email)}"/></div>
+      <div class="field"><label class="label">Phone (display)</label><input class="input" data-bind="contact.phone" value="${escapeHtml(d.contact.phone)}"/></div>
     </div>
-    <div class="field">
-      <label class="label">Phone (tel: link) <span class="meta">no spaces, e.g. +8801303266100</span></label>
-      <input class="input" data-bind="contact.phoneTel" value="${escapeHtml(d.contact.phoneTel || '')}"/>
-    </div>
-    <div class="field">
-      <label class="label">Address <span class="meta">one line per line</span></label>
-      <textarea class="textarea" data-bind="contact.address">${escapeHtml(d.contact.address)}</textarea>
-    </div>
+    <div class="field"><label class="label">Phone (tel: link) <span class="meta">no spaces, e.g. +8801303266100</span></label><input class="input" data-bind="contact.phoneTel" value="${escapeHtml(d.contact.phoneTel || '')}"/></div>
+    <div class="field"><label class="label">Address <span class="meta">one line per line</span></label><textarea class="textarea" data-bind="contact.address">${escapeHtml(d.contact.address)}</textarea></div>
   `;
 }
-
-/* ---------- FOOTER ---------- */
 
 function renderFooterForm(d){
   return `
     <div class="field-row">
-      <div class="field">
-        <label class="label">Left text</label>
-        <input class="input" data-bind="footer.left" value="${escapeHtml(d.footer.left)}"/>
-      </div>
-      <div class="field">
-        <label class="label">Right text</label>
-        <input class="input" data-bind="footer.right" value="${escapeHtml(d.footer.right)}"/>
-      </div>
+      <div class="field"><label class="label">Left text</label><input class="input" data-bind="footer.left" value="${escapeHtml(d.footer.left)}"/></div>
+      <div class="field"><label class="label">Right text</label><input class="input" data-bind="footer.right" value="${escapeHtml(d.footer.right)}"/></div>
     </div>
   `;
 }
@@ -1093,11 +840,11 @@ function renderFooterForm(d){
 
 const TEMPLATES = {
   paragraph: () => '',
-  experience: () => ({ id: uid('e'), date: '', role: 'New role', org: '', tasks: [] }),
+  experience: () => ({ id: uid('e'), date: '', role: 'New role', org: '', tasks: [], imageUrl: '' }),
   skill: () => ({ id: uid('s'), heading: 'New skill', sub: '', chips: [] }),
   publication: () => ({ id: uid('p'), year: new Date().getFullYear(), title: '', authorsHtml: '', journal: '', doi: '' }),
-  education: () => ({ id: uid('ed'), degree: '', institution: '', dates: '', grade: '' }),
-  research: () => ({ id: uid('r'), title: '', institution: '', description: '', dates: '', role: '' }),
+  project: () => ({ id: uid('pr'), name: 'New project', role: '', year: String(new Date().getFullYear()), desc: '', tools: '', link: '', image: '' }),
+  education: () => ({ id: uid('ed'), date: '', school: '', degree: '', desc: '', grade: '', gradeMax: '/4' }),
   course: () => ({ id: uid('c'), name: '', org: '', date: '', duration: '', category: '' })
 };
 
@@ -1109,7 +856,10 @@ function setByPath(obj, path, value){
   for(let i = 0; i < parts.length - 1; i++){
     const p = parts[i];
     if(/^\d+$/.test(p)) cur = cur[parseInt(p, 10)];
-    else cur = cur[p];
+    else{
+      if(cur[p] == null) cur[p] = (/^\d+$/.test(parts[i+1]) ? [] : {});
+      cur = cur[p];
+    }
   }
   const last = parts[parts.length - 1];
   if(/^\d+$/.test(last)) cur[parseInt(last, 10)] = value;
@@ -1128,55 +878,40 @@ function getByPath(obj, path){
 }
 
 function wireAllForms(){
-  // Bind inputs
   document.querySelectorAll('[data-bind]').forEach(el => {
     el.addEventListener('input', () => {
       const path = el.getAttribute('data-bind');
       let v = el.value;
-      if(el.type === 'number'){
-        v = v === '' ? '' : Number(v);
-      }
+      if(el.type === 'number'){ v = v === '' ? '' : Number(v); }
       setByPath(state.data, path, v);
       markDirty();
     });
   });
 
-  // Bind multi-line arrays (one item per line)
   document.querySelectorAll('[data-bind-lines]').forEach(el => {
     el.addEventListener('input', () => {
       const path = el.getAttribute('data-bind-lines');
       const sep = el.getAttribute('data-sep');
       let arr;
-      if(sep === 'comma'){
-        arr = el.value.split(',').map(s => s.trim()).filter(Boolean);
-      }else{
-        arr = el.value.split('\n').map(s => s.trim()).filter(Boolean);
-      }
+      if(sep === 'comma'){ arr = el.value.split(',').map(s => s.trim()).filter(Boolean); }
+      else{ arr = el.value.split('\n').map(s => s.trim()).filter(Boolean); }
       setByPath(state.data, path, arr);
       markDirty();
     });
   });
 
-  // Array add
   document.querySelectorAll('[data-array-add]').forEach(btn => {
     btn.addEventListener('click', () => {
       const path = btn.getAttribute('data-array-add');
       const tplName = btn.getAttribute('data-template');
       const arr = getByPath(state.data, path);
-      const newItem = TEMPLATES[tplName]();
-      arr.push(newItem);
+      arr.push(TEMPLATES[tplName]());
       markDirty();
       renderApp();
-      // Re-open the section we were in
-      const sectionEl = btn.closest('.section');
-      if(sectionEl){
-        const id = sectionEl.getAttribute('data-section');
-        document.querySelector(`.section[data-section="${id}"]`)?.classList.add('open');
-      }
+      reopenSection(btn);
     });
   });
 
-  // Array remove
   document.querySelectorAll('[data-array-remove]').forEach(btn => {
     btn.addEventListener('click', () => {
       if(!confirm('Remove this item?')) return;
@@ -1186,15 +921,10 @@ function wireAllForms(){
       arr.splice(i, 1);
       markDirty();
       renderApp();
-      const sectionEl = btn.closest('.section');
-      if(sectionEl){
-        const id = sectionEl.getAttribute('data-section');
-        document.querySelector(`.section[data-section="${id}"]`)?.classList.add('open');
-      }
+      reopenSection(btn);
     });
   });
 
-  // Array move
   document.querySelectorAll('[data-array-move]').forEach(btn => {
     btn.addEventListener('click', () => {
       const path = btn.getAttribute('data-array-move');
@@ -1206,11 +936,7 @@ function wireAllForms(){
       [arr[i], arr[j]] = [arr[j], arr[i]];
       markDirty();
       renderApp();
-      const sectionEl = btn.closest('.section');
-      if(sectionEl){
-        const id = sectionEl.getAttribute('data-section');
-        document.querySelector(`.section[data-section="${id}"]`)?.classList.add('open');
-      }
+      reopenSection(btn);
     });
   });
 
@@ -1226,19 +952,12 @@ function wireAllForms(){
       try{
         const { dataUrl, base64 } = await resizeImage(file, 600);
         const path = `images/avatar-${Date.now()}.jpg`;
-        state.pendingImageUploads.push({
-          path,
-          base64,
-          message: 'Update avatar'
-        });
+        state.pendingImageUploads.push({ path, base64, message: 'Update avatar' });
         state.data.profile.avatarUrl = path;
         markDirty();
-        // Preview locally with data URL
         document.getElementById('avatar-preview').innerHTML = `<img src="${dataUrl}"/>`;
-        toast('Avatar staged — click "Save changes" to publish', 'success');
-      }catch(err){
-        toast('Could not load image: ' + err.message, 'error');
-      }
+        toast('Avatar staged — click Save changes to publish', 'success');
+      }catch(err){ toast('Could not load image: ' + err.message, 'error'); }
     });
   }
   const avClear = document.getElementById('avatar-clear-btn');
@@ -1251,9 +970,46 @@ function wireAllForms(){
     });
   }
 
+  // Generic image upload (projects, experience)
+  document.querySelectorAll('[data-image-upload]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const path = btn.getAttribute('data-image-upload');
+      const prefix = btn.getAttribute('data-prefix') || 'img';
+      const input = document.createElement('input');
+      input.type = 'file';
+      input.accept = 'image/*';
+      input.onchange = async e => {
+        const file = e.target.files[0];
+        if(!file || !file.type.startsWith('image/')){ toast('Please pick an image file', 'error'); return; }
+        try{
+          const { dataUrl, base64 } = await resizeImage(file, 1200);
+          const filePath = `images/${prefix}-${Date.now()}.jpg`;
+          state.pendingImageUploads.push({ path: filePath, base64, message: `Update ${prefix} image` });
+          setByPath(state.data, path, filePath);
+          markDirty();
+          // Update the preview in place
+          const preview = document.querySelector(`[data-image-preview="${path}"]`);
+          if(preview) preview.innerHTML = `<img src="${dataUrl}"/>`;
+          toast('Image staged — click Save changes to publish', 'success');
+        }catch(err){ toast('Could not load image: ' + err.message, 'error'); }
+      };
+      input.click();
+    });
+  });
+
+  document.querySelectorAll('[data-image-clear]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const path = btn.getAttribute('data-image-clear');
+      setByPath(state.data, path, '');
+      markDirty();
+      renderApp();
+      reopenSection(btn);
+    });
+  });
+
   // DOI fetch
   const doiBtn = document.getElementById('pub-doi-fetch-btn');
-  if(doiBtn){ doiBtn.addEventListener('click', openDoiModal); }
+  if(doiBtn) doiBtn.addEventListener('click', openDoiModal);
 }
 
 /* ---------- IMAGE RESIZE ---------- */
@@ -1271,7 +1027,7 @@ function resizeImage(file, maxSize){
         canvas.width = w; canvas.height = h;
         const ctx = canvas.getContext('2d');
         ctx.drawImage(img, 0, 0, w, h);
-        const dataUrl = canvas.toDataURL('image/jpeg', 0.88);
+        const dataUrl = canvas.toDataURL('image/jpeg', 0.85);
         const base64 = dataUrl.split(',')[1];
         resolve({ dataUrl, base64 });
       };
@@ -1283,7 +1039,7 @@ function resizeImage(file, maxSize){
   });
 }
 
-/* ---------- DOI FETCH MODAL ---------- */
+/* ---------- DOI MODAL ---------- */
 
 function openModal({ title, desc, body, actions }){
   document.getElementById('modal-title').textContent = title || '';
@@ -1307,12 +1063,7 @@ function openDoiModal(){
   openModal({
     title: 'Add publication by DOI',
     desc: 'Enter a DOI to auto-fill from CrossRef.',
-    body: `
-      <div class="field">
-        <input class="input" id="doi-input" placeholder="10.1007/s43621-025-00878-7"/>
-        <div class="field-hint">Example: 10.1007/s43621-025-00878-7 — or a full DOI URL.</div>
-      </div>
-    `,
+    body: `<div class="field"><input class="input" id="doi-input" placeholder="10.1007/s43621-025-00878-7"/><div class="field-hint">Example: 10.1007/s43621-025-00878-7 — or a full DOI URL.</div></div>`,
     actions: [
       { label: 'Cancel', kind: 'btn-secondary', onclick: closeModal },
       { label: 'Fetch & add', kind: 'btn-primary', onclick: doFetchDoi }
@@ -1326,15 +1077,9 @@ async function doFetchDoi(){
   const doi = cleanDoi(raw);
   const alertEl = document.getElementById('modal-alert');
   alertEl.innerHTML = '';
-  if(!/^10\.\d{4,9}\//.test(doi)){
-    alertEl.innerHTML = `<div class="alert error">That doesn't look like a valid DOI.</div>`;
-    return;
-  }
+  if(!/^10\.\d{4,9}\//.test(doi)){ alertEl.innerHTML = `<div class="alert error">That doesn't look like a valid DOI.</div>`; return; }
   const existing = state.data.publications.map(p => (p.doi || '').toLowerCase());
-  if(existing.includes(doi.toLowerCase())){
-    alertEl.innerHTML = `<div class="alert error">This DOI is already in your publications.</div>`;
-    return;
-  }
+  if(existing.includes(doi.toLowerCase())){ alertEl.innerHTML = `<div class="alert error">This DOI is already in your publications.</div>`; return; }
   alertEl.innerHTML = `<div class="alert info"><span class="spinner"></span>Fetching from CrossRef…</div>`;
   try{
     const resp = await fetch(`https://api.crossref.org/works/${encodeURIComponent(doi)}`, { headers: { 'Accept': 'application/json' } });
@@ -1342,15 +1087,14 @@ async function doFetchDoi(){
     const json = await resp.json();
     const msg = json.message;
     const title = (msg.title && msg.title[0]) || 'Untitled';
-    const newPub = {
+    state.data.publications.unshift({
       id: uid('p'),
       year: getYear(msg),
       title,
       authorsHtml: formatAuthors(msg.author || []),
       journal: stripTags(formatJournal(msg)),
       doi
-    };
-    state.data.publications.unshift(newPub);
+    });
     markDirty();
     renderApp();
     document.querySelector('.section[data-section="publications"]')?.classList.add('open');
@@ -1361,9 +1105,7 @@ async function doFetchDoi(){
   }
 }
 
-function cleanDoi(s){
-  return (s || '').replace(/^https?:\/\/(dx\.)?doi\.org\//i, '').replace(/^doi:\s*/i, '').trim();
-}
+function cleanDoi(s){ return (s || '').replace(/^https?:\/\/(dx\.)?doi\.org\//i, '').replace(/^doi:\s*/i, '').trim(); }
 function getYear(msg){
   const issued = msg.issued || msg['published-print'] || msg['published-online'] || msg.created;
   if(issued && issued['date-parts'] && issued['date-parts'][0]) return issued['date-parts'][0][0];
@@ -1410,15 +1152,11 @@ document.getElementById('save-btn').addEventListener('click', async () => {
   const original = btn.textContent;
   btn.textContent = 'Saving…';
   try{
-    // 1) Upload any pending images first
     for(const img of state.pendingImageUploads){
-      // Check if the file already exists (replace)
       const existingSha = await ghGetFileSha(img.path);
       await ghPutFile(img.path, img.base64, img.message, existingSha);
     }
     state.pendingImageUploads = [];
-
-    // 2) Save data.json
     const json = JSON.stringify(state.data, null, 2) + '\n';
     const b64 = utf8ToBase64(json);
     const result = await ghPutFile(DATA_PATH, b64, `Update portfolio content (${new Date().toISOString()})`, state.dataSha);
@@ -1443,7 +1181,6 @@ document.getElementById('save-btn').addEventListener('click', async () => {
   const savedPat = localStorage.getItem(PAT_STORAGE_KEY);
   if(savedPat){
     document.getElementById('pat-input').value = savedPat;
-    // Auto-login
     tryLogin(savedPat).then(r => {
       if(r.ok) enterApp();
       else document.getElementById('login-alert').innerHTML = `<div class="alert warn">Saved token didn't work: ${escapeHtml(r.error)}. Paste a new one.</div>`;
