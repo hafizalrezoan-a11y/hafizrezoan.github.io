@@ -173,7 +173,7 @@
       "desc": "Identified geomorphological differences across Kutubdia, Maheshkhali, Sonadia and Saint Martin's islands.",
       "tools": "ArcGIS 10.3, Field Survey",
       "link": "",
-      "image": "images/project-1780831370289.jpg"
+      "image": "images/project-1784708121536.jpg"
     },
     {
       "id": "pr_mq3fn9pa648y",
@@ -183,27 +183,7 @@
       "desc": "Served as Research Consultant responsible for extracting spatial data from high-resolution WorldView-3 satellite imagery using ArcGIS Pro. Carried out spatial data analysis, map digitization, image interpretation, and creation of land use/land cover classification maps.",
       "tools": "Erdas Imagine, ArcGIS Pro",
       "link": "",
-      "image": ""
-    },
-    {
-      "id": "pr_mq3fnnxvb146",
-      "name": "New project",
-      "role": "",
-      "year": "2026",
-      "desc": "",
-      "tools": "",
-      "link": "",
-      "image": ""
-    },
-    {
-      "id": "pr_mq3fnpmsycs3",
-      "name": "New project",
-      "role": "",
-      "year": "2026",
-      "desc": "",
-      "tools": "",
-      "link": "",
-      "image": ""
+      "image": "images/project-1784707707802.jpg"
     }
   ],
   "skills": [
