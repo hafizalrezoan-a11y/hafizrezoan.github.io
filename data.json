@@ -80,14 +80,14 @@
     }
   ],
   "featured": {
-    "label": "Featured Publication · 2025",
-    "headline": "The impact of staple crop price instability and fragmented policy on <em>food security and sustainable development</em>",
-    "summary": "A case study from Bangladesh examining how price volatility and policy fragmentation affect food security outcomes — published in <em>Discover Sustainability</em>.",
+    "label": "Featured Publication · 2026",
+    "headline": "Impact of air pollution on sustainable development and environmental justice: Insights from industrial cities of Bangladesh",
+    "summary": "In densely populated industrial cities, residents experience heightened exposure to air pollutants, raising environmental justice concerns and impeding progress toward Sustainable Development Goals (SDGs). This study examines seasonal air pollution patterns in four major industrial cities of Bangladesh using Sentinel-5P TROPOMI data. The analysis reveals distinct seasonal trends, with pollutant levels lowest during the monsoon and highest in winter and post-monsoon periods, while some pollutants also peak pre-monsoon. Hotspot analysis identifies severe CO pollution in winter across central, northern, and southern Dhaka, while NO2 levels are notably high in Dhaka, Narayanganj, and Gazipur during post-monsoon and winter. Geographically Weighted Regression (GWR) analysis highlights key relationships between pollutants and meteorological variables. O3 shows a strong positive GWR coefficient with precipitation in Gazipur during monsoon (0.79 to 2.15) and a negative coefficient with temperature in Narsingdi during pre-monsoon (–2.23 to − 1.88). NO2 shows a positive coefficient with temperature in Gazipur and Dhaka during monsoon (1.02 to 1.47) and a negative coefficient with precipitation in Narsingdi during pre-monsoon (–1.66 to − 1.38). Other pollutants, including HCHO, SO2, and CO, exhibit varying relationships with humidity, pressure, temperature, wind speed, and precipitation across seasons and locations. Workers and residents near industrial zones face significant health risks, underscoring environmental justice concerns. This study highlights air pollution’s detrimental impact on SDGs 3, 7, and 11, obstructing sustainable development. The findings can inform Bangladesh and other industrialized nations in identifying pollution sources and implementing effective mitigation strategies for healthier, more sustainable urban environments.",
     "ctaLabel": "Read on Springer →",
-    "ctaHref": "https://doi.org/10.1007/s43621-025-00878-7",
+    "ctaHref": "10.1007/s00704-026-06555-7",
     "stats": [
       {
-        "num": "4",
+        "num": "5",
         "label": "Publications"
       },
       {
