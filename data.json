@@ -62,11 +62,11 @@
   "education": [
     {
       "id": "ed_1",
-      "date": "Feb 2022 — Dec 2024",
+      "date": "Feb 2022 — Feb 2024",
       "school": "Jahangirnagar University",
       "degree": "MS in GIS for Environment and Development · Dept. of Geography",
       "desc": "A research-intensive master's focused on applied geospatial analysis, remote sensing, and environmental modelling — culminating in a thesis combining field survey data with spatial techniques.",
-      "grade": "3.94",
+      "grade": "3.89",
       "gradeMax": "/4"
     },
     {
